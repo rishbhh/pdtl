@@ -9,7 +9,7 @@
 }
 
  :root {
-    --qode-main-color: #f7c600;
+    --qode-main-color: #C01B27;
     --qode-header-light-color: #ffffff;
     --qode-header-light-hover-color: #f7c600;
     --qode-header-dark-color: #1b1b1b;
@@ -199,6 +199,7 @@ button:hover {
     letter-spacing: 1px;
     margin-top: 2%;
     color: #333333;
+    font-weight: 700;
 }
 
 .cta1 span {
@@ -935,7 +936,7 @@ body {
         font-weight: 700;
         letter-spacing: -.01em;
         color: #1b1b1b;
-        font-size: 45px;
+        font-size: 42px;
         line-height: 1.155em;
         margin: 25px 0;
         word-wrap: break-word;
@@ -1048,11 +1049,13 @@ body {
     }
     .get-on>.no>a {
         color: #1a1a1a;
+        font-weight: 600;
     }
     .get-on>h6 {
         margin-top: 10%;
         letter-spacing: 1px;
         color: #D31A1A;
+        font-size: 14px;
     }
     .email-center {
         display: flex;
@@ -1063,6 +1066,7 @@ body {
     .get-on>.email-center h6 {
         color: #D31A1A;
         letter-spacing: 1px;
+        font-size: 14px;
     }
     .traning {
         width: 50%;
@@ -1300,6 +1304,16 @@ background: rgb(21, 38, 56);
 .projectFactsWrap .item:nth-child(4){
 background: rgb(23, 44, 66);
 } */
+    .callme {
+        font-size: 2em;
+        text-align: right;
+        margin-top: 2%;
+        letter-spacing: 1px;
+    }
+    .callme span {
+        font-size: 30px;
+        color: #c01b27;
+    }
     .secion-4 {
         margin-bottom: 160px;
     }
@@ -1309,15 +1323,15 @@ background: rgb(23, 44, 66);
         font-weight: bold;
     }
     .projectFactsWrap .item p {
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 18px;
+        color: #fff;
+        font-size: 17px;
         margin: 0;
         letter-spacing: 1px;
         text-align: left;
     }
     .projectFactsWrap .item span {
         width: 60px;
-        background: rgba(255, 255, 255, 0.8);
+        background: #fff;
         height: 2px;
         display: block;
         margin: 0 auto;
@@ -1578,7 +1592,7 @@ background: rgb(23, 44, 66);
         padding-right: 1%;
     }
     .widt {
-        width: 1300px;
+        /* width: 1300px; */
     }
     /* Testimonial Sec */
     .testim {
@@ -2376,6 +2390,7 @@ background: rgb(23, 44, 66);
         top: 35%;
         font-size: 1.8rem;
     }
+    /* footer Css */
 }
 
 
@@ -2511,6 +2526,37 @@ background: rgb(23, 44, 66);
     left: 0;
     width: 100%;
     background: #Fff;
+    box-shadow: 1px 1px 30px #0000004f;
+}
+
+.fixed-header .link img {
+    width: 150px;
+    padding-left: 27px;
+    filter: brightness(0.5);
+}
+
+.fixed-header .call-us a {
+    padding: 8px 34px;
+    background: #c32533 0% 0% no-repeat padding-box;
+    box-shadow: 2px 2px 2px #00000029;
+    border: 0px solid #c32533;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fixed-header .navicon .fas {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.fixed-header .navicon {
+    padding: 0px 20px;
+    border-left: 1px solid rgb(0 0 0 / 33%);
+    border-right: 1px solid rgb(0 0 0 / 33%);
 }
 
 .fixed-header .nav-item a {
