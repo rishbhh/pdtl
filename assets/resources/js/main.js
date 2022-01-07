@@ -399,3 +399,63 @@ $(document).ready(function() {
         }]
     });
 });
+
+
+// dropdwon
+const button = document.querySelector('button');
+const menu = document.querySelector('.menu');
+
+button.addEventListener('click', () => {
+    menu.classList.toggle('activated');
+});
+
+const menuButtons = document.querySelectorAll('.menu__button');
+
+const menuButtonsArray = Array.from(menuButtons);
+
+menuButtonsArray.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        closeAnotherButtons(button);
+        button.classList.toggle('activated');
+
+    });
+});
+
+function closeAnotherButtons(activeButton) {
+
+    menuButtonsArray.forEach(button => {
+
+        if (button != activeButton) {
+            if (button.classList.contains('activated')) {
+                button.classList.remove('activated');
+            }
+        }
+
+    });
+}
+
+// olick
+$(document).ready(function() {
+    $('.nav-item ').click(function() {
+        $('.nav-item').removeClass("current-menu");
+        $(this).addClass("current-menu");
+    });
+});
+
+// sticky
+/* ========================================== 
+scrollTop() >= 300
+Should be equal the the height of the header
+========================================== */
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() >= 300) {
+        $('.header').addClass('fixed-header');
+        $('nav div').addClass('visible-title');
+    } else {
+        $('.header').removeClass('fixed-header');
+        $('nav div').removeClass('visible-title');
+    }
+});
