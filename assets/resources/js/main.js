@@ -180,7 +180,7 @@ autoSliding - boolean
 autoSlidingDelay - delay in ms. If audoSliding is on and no value provided, default value is 5000
 blockASafterClick - boolean. If user clicked any sliding control, autosliding won't start again
 */
-fncSlider(".example-slider", { autoSlidingDelay: 4000 });
+fncSlider(".example-slider", { autoSlidingDelay: 3000 });
 
 var $demoCont = document.querySelector(".demo-cont");
 
@@ -190,13 +190,13 @@ var $demoCont = document.querySelector(".demo-cont");
     });
 });
 
-document.querySelector(".demo-cont__credits-close").addEventListener("click", function() {
-    $demoCont.classList.remove("credits-active");
-});
+// document.querySelector(".demo-cont__credits-close").addEventListener("click", function() {
+//     $demoCont.classList.remove("credits-active");
+// });
 
-document.querySelector(".js-activate-global-blending").addEventListener("click", function() {
-    document.querySelector(".example-slider").classList.toggle("m--global-blending-active");
-});
+// document.querySelector(".js-activate-global-blending").addEventListener("click", function() {
+//     document.querySelector(".example-slider").classList.toggle("m--global-blending-active");
+// });
 
 // CounterJs
 

@@ -113,27 +113,38 @@ a {
 .fnc-slide__content {
     z-index: 2;
     position: absolute;
-    left: 40%;
-    top: 40%;
+    left: 50%;
+    top: 20%;
 }
 
 .fnc-slide__heading {
     margin-bottom: 10px;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 .fnc-slide__heading-line {
     overflow: hidden;
     position: relative;
-    padding-right: 20px;
-    font-size: 100px;
+    padding-right: 42%;
+    font-size: 62px;
     color: #fff;
     word-spacing: 10px;
 }
 
-.fnc-slide__heading-line:nth-child(2) {
-    padding-left: 30px;
+.fnc-slide__heading-line .smal {
+    text-align: left;
+    font: normal normal 500 31px/86px Montserrat;
+    letter-spacing: 1.8px;
+    color: #FFFFFF;
+    text-shadow: 5px 5px 5px #00000052;
+    text-transform: uppercase;
 }
+
+
+/* .fnc-slide__heading-line:nth-child(2) {
+    padding-left: 30px;
+} */
 
 .m--before-sliding .fnc-slide__heading-line {
     transform: translateY(100%);
@@ -150,7 +161,7 @@ a {
 }
 
 .fnc-slide__heading-line span {
-    display: block;
+    /* display: block; */
 }
 
 .m--before-sliding .fnc-slide__heading-line span {
@@ -366,7 +377,6 @@ body {
     height: 100%;
     padding: 20px 10px 30px;
     background: #303030;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     color: #fff;
     text-align: center;
     transition: transform 0.7s;
@@ -497,12 +507,11 @@ body {
 .example-slider .fnc-slide__heading,
 .example-slider .fnc-slide__action-btn,
 .example-slider .fnc-nav__control {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    /* font-family: "Open Sans", Helvetica, Arial, sans-serif; */
 }
 
 
-/* COLORFUL SWITCH STYLES 
-   ORIGINAL DEMO - https://codepen.io/suez/pen/WQjwOb */
+/* COLORFUL SWITCH STYLES  */
 
 .colorful-switch {
     position: relative;
@@ -705,6 +714,18 @@ body {
     .div-con {
         text-align: left;
     }
+    .div-con>a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 17px;
+        color: #1a1a1a;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    .div-con>a>.icons {
+        margin-right: 10px;
+    }
     .custom-icon {
         position: relative;
         display: inline-block;
@@ -824,7 +845,7 @@ body {
         box-shadow: none;
     }
     .cta1 .call {
-        padding: 6px 14px;
+        padding: 4px 14px;
         margin-right: 10px;
     }
     .call img {
@@ -2226,7 +2247,7 @@ background: rgb(23, 44, 66);
 
 .link img {
     width: 150px;
-    padding-left: 10px;
+    padding-left: 27px;
 }
 
 .navbar {
@@ -2286,11 +2307,11 @@ background: rgb(23, 44, 66);
 
 .nav-item a {
     font-family: Sarabun, sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: -.01em;
     color: #fff;
-    font-size: 12px;
-    letter-spacing: 1px;
+    font-size: 18px;
+    letter-spacing: 2px;
     line-height: 1.294em;
     align-items: center;
     display: flex;
@@ -2298,6 +2319,15 @@ background: rgb(23, 44, 66);
     position: relative;
     text-decoration: none;
     transition: color 0.3s ease-out;
+}
+
+.navicon {
+    padding: 0px 20px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    height: 100%;
+    align-items: center;
+    display: inline-flex;
 }
 
 .nav-item a:hover {
@@ -2312,7 +2342,7 @@ background: rgb(23, 44, 66);
 }
 
 .call-us {
-    padding: 15px;
+    padding: 26px;
 }
 
 .call-us a {
@@ -2321,6 +2351,11 @@ background: rgb(23, 44, 66);
     box-shadow: 2px 2px 2px #00000029;
     border: 3px solid #FFFFFF;
     border-radius: 5px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .icons {
@@ -2337,10 +2372,12 @@ background: rgb(23, 44, 66);
     position: relative;
 }
 
-.navicon a {}
+.navicon a {
+    padding: 10px;
+}
 
 .navicon .fas {
-    font-size: 29px;
+    font-size: 24px;
     color: #fff;
 }
 
