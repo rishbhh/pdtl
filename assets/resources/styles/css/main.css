@@ -2390,6 +2390,23 @@ background: rgb(23, 44, 66);
         top: 35%;
         font-size: 1.8rem;
     }
+    /* Banner */
+    .hero-banner {
+        height: 83vh;
+        background-size: cover;
+        width: 100%;
+        filter: brightness(0.9);
+        align-items: center;
+        display: flex;
+    }
+    .hero-banner h4 {
+        font: normal normal bold 64px/86px Montserrat;
+        letter-spacing: 3.2px;
+        color: #FFFFFF;
+        text-shadow: 10px 10px 12px #00000029;
+        text-transform: uppercase;
+        margin-left: 8%;
+    }
     /* footer Css */
     .footer {
         width: 100%;
@@ -2652,6 +2669,7 @@ background: rgb(23, 44, 66);
     color: #fff;
     font-size: 18px;
     letter-spacing: 2px;
+    text-shadow: 1px 1px 4px #000;
     line-height: 1.294em;
     align-items: center;
     display: flex;
