@@ -1561,6 +1561,7 @@ background: rgb(23, 44, 66);
         width: 100%;
         flex-wrap: wrap;
         align-content: flex-start;
+        margin-bottom: 7%;
     }
     .news>.train {
         width: 25%;
@@ -2407,6 +2408,167 @@ background: rgb(23, 44, 66);
         text-transform: uppercase;
         margin-left: 8%;
     }
+    /* about */
+    .our {
+        border-bottom: 1px solid #bfbfbf;
+        padding-bottom: 6%;
+    }
+    .bdr {
+        border-radius: 0;
+        padding: 7em 5em;
+    }
+    .about-frm {
+        margin-bottom: 80px;
+    }
+    .content-div p {
+        text-align: left;
+        letter-spacing: 1.1px;
+        color: #707070;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+    }
+    .weight-500 {
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .cust-li {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .cust-li ul {
+        list-style: none;
+        text-align: left;
+    }
+    .cust-li ul li {
+        padding-bottom: 20px;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+        line-height: 2em;
+        font-weight: 500;
+        position: relative;
+        text-transform: uppercase;
+        color: #1a1a1a;
+    }
+    .cust-li ul .chev:before {
+        border-style: solid;
+        border-width: 0.2em 0.2em 0 0;
+        content: '';
+        display: inline-block;
+        height: 0.35em;
+        left: -1.85em;
+        position: absolute;
+        top: 0.8em;
+        transform: rotate( -135deg);
+        vertical-align: top;
+        width: 0.35em;
+        border-color: #C01B27;
+    }
+    .cust-li ul .chev:after {
+        border-style: solid;
+        border-width: 0.2em 0.2em 0 0;
+        content: '';
+        display: inline-block;
+        height: 0.35em;
+        left: -1.7em;
+        position: absolute;
+        top: 1em;
+        transform: rotate( 45deg);
+        vertical-align: top;
+        width: 0.35em;
+        border-color: #C01B27;
+    }
+    .about-frm>.contain-flex>.form-div {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .about-frm .title {
+        margin-top: 5%;
+        padding-left: 10%;
+        margin-bottom: 0%;
+        font-size: 2.3em;
+        font-weight: 500;
+    }
+    .about-frm form.whatsapp-form {
+        padding-left: 0;
+    }
+    /* traning Page*/
+    .text-p {
+        margin-top: 40px;
+        font-size: 21px;
+        letter-spacing: 1px;
+        line-height: 1.9;
+        color: #666666;
+    }
+    .dvid .info-step {
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+    .info-stp {
+        width: 63%;
+        padding-left: 7.6%;
+        padding-right: 0px;
+        border-left: 1px solid #a6a6a6;
+    }
+    .dvid .info-stp {
+        flex-shrink: 0;
+    }
+    .info-stp .contents {
+        padding: 10px;
+    }
+    .info-stp .contents .icons {
+        letter-spacing: -.01em;
+        font-size: 17px;
+        line-height: 1.294em;
+        align-items: center;
+        display: flex;
+        gap: 14px;
+        height: 100%;
+        justify-content: center;
+        background: transparent;
+        padding: 28px 28px;
+        border-color: #474747;
+        position: relative;
+    }
+    .info-stp .contents .icons:before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        background-color: #474747;
+        border-radius: 20px;
+        pointer-events: all;
+        transition: all 0.3s ease-in-out;
+    }
+    .info-stp .contents .icons:after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 14px;
+        background-color: #474747;
+        border-radius: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+    .content-div a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 17px;
+        color: #1a1a1a;
+        letter-spacing: 1px;
+        font-weight: 500;
+        width: 22%;
+        text-align: left;
+    }
+    .content-div a .icons {
+        margin-right: 10px;
+        padding: 28px 28px;
+    }
     /* footer Css */
     .footer {
         width: 100%;
@@ -2699,6 +2861,7 @@ background: rgb(23, 44, 66);
     width: 100%;
     background: #Fff;
     box-shadow: 1px 1px 30px #0000004f;
+    transition: all 0.3s ease-in-out;
 }
 
 .fixed-header .link img {
@@ -2733,6 +2896,7 @@ background: rgb(23, 44, 66);
 
 .fixed-header .nav-item a {
     color: #000;
+    text-shadow: none;
 }
 
 .right-nav {
