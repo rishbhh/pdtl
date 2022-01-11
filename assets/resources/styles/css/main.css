@@ -1599,7 +1599,7 @@ background: rgb(23, 44, 66);
         padding-right: 1%;
     }
     .widt {
-        /* width: 1300px; */
+        width: 1130px;
     }
     /* Testimonial Sec */
     .testim {
@@ -2364,6 +2364,7 @@ background: rgb(23, 44, 66);
     .slick-slide img {
         display: block;
         margin: 0 auto;
+        padding: 40px;
     }
     .slick-slide.slick-loading img {
         display: none;
@@ -2902,6 +2903,303 @@ background: rgb(23, 44, 66);
             width: 100%;
         }
     }
+    /* Training Page Slider */
+    .traning-slider {
+        padding: 1% 0% 0% 11%;
+        width: 85%;
+        background: #1A1A1A 0% 0% no-repeat padding-box;
+    }
+    .traning-slider .m-title {
+        color: #fff;
+        padding: 28px 0px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .logi {
+        text-align: left;
+        width: 100%;
+        font-size: 30px;
+        line-height: 2;
+        text-transform: capitalize;
+    }
+    /* logistics Section */
+    .tabs {
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 2px solid #c7c7c7;
+    }
+    .tabs ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .tabs ul li {
+        float: left;
+        width: 16%;
+        line-height: 60px;
+        text-align: left;
+    }
+    .tabs ul li a {
+        color: #1a1a1a;
+        letter-spacing: 1px;
+    }
+    .tabs span {
+        display: block;
+        height: 2px;
+        width: 15%;
+        background: #c01b27;
+        position: relative;
+        left: 0;
+        top: 2px;
+        transition: 0.3s ease-in-out;
+    }
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+    .tabs-div {
+        margin-top: 50px;
+    }
+    .tabs-div>p {
+        text-align: center;
+        margin: 30px auto;
+        padding: 0 10%;
+    }
+    .tabs-div>div {
+        width: 80%;
+        margin: 0 auto;
+        display: none;
+    }
+    .tabs-div>div.activ {
+        display: block;
+    }
+    .info-divd {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info-divd>.info-image {
+        width: 42%;
+        padding-right: 5.8%;
+        padding-left: 0px;
+        border-right: 1px solid #a6a6a6;
+        border-left: none;
+    }
+    .info-divd>.info-con {
+        margin-top: 10px;
+        padding-left: 50px;
+        padding-right: 2%;
+        width: 55%;
+    }
+    .info-divd>.info-con>a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 17px;
+        color: #1a1a1a;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .info-divd>.info-con>a>.icons {
+        margin-right: 10px;
+    }
+    @media screen and (max-width: 600px) {}
+}
+
+
+/* slider обертка */
+
+.slider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*Окно со слайдами*/
+
+.slider-content {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*Контейнер для слайдов (передвигаем)*/
+
+.slider-content-wrapper {
+    display: flex;
+    height: 60vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/*Слайд*/
+
+.slider-content__item {
+    flex: 1 0 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-1 {
+    background-image: url('/assets/resources/images/t1.png');
+}
+
+.image-2 {
+    background-image: url('/assets/resources/images/t2.png');
+}
+
+.image-3 {
+    background-image: url('/assets/resources/images/t3.png');
+}
+
+
+/* Блок с контролами */
+
+.slider-controls {
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+
+/* Блок с контролами внутри окна */
+
+.slider-content__controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /*transform: translateY(-50%);*/
+    /*padding:0 15px;*/
+}
+
+
+/* Arrows */
+
+.prev-arrow,
+.next-arrow {
+    position: absolute;
+    top: 50%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgb(255 255 255);
+    width: 57px;
+    transition: all 0.3s;
+}
+
+.prev-arrow {
+    left: 20px;
+    display: none;
+}
+
+.next-arrow {
+    right: -28px;
+    background: #c32533;
+}
+
+.next-arrow svg {
+    width: 20px;
+}
+
+
+/* Dots */
+
+.dots {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    display: none;
+}
+
+.dot {
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 0 5px 0px rgba(0,0,0,0.9);*/
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.dot:last-child {
+    margin-right: 0;
+}
+
+.dot:hover {
+    background-color: #fff;
+}
+
+.dot--active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Buttons */
+
+button {
+    cursor: pointer;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #3066BE;
+    color: #FFF;
+    transition: all 0.5s;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+button:hover {
+    background-color: #60AFFF;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* Mods */
+
+.disabled {
+    background-color: #DCCFCF;
+    color: #B0A8A8;
+    cursor: default;
+    pointer-events: none;
+}
+
+.d-none {
+    display: none;
+}
+
+.active {
+    opacity: 1;
+}
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -3092,7 +3390,6 @@ background: rgb(23, 44, 66);
     padding: 8px 34px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 2px 2px 2px #00000029;
-    border: 3px solid #FFFFFF;
     border-radius: 5px;
     color: #000;
     font-size: 18px;
@@ -3122,6 +3419,18 @@ background: rgb(23, 44, 66);
 .navicon .fas {
     font-size: 24px;
     color: #fff;
+}
+
+.map {
+    position: relative;
+}
+
+#map {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
 }
 
 
