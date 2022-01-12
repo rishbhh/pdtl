@@ -1023,11 +1023,27 @@ body {
         box-shadow: none;
     }
     .cta1 .call {
-        padding: 4px 14px;
+        padding: 4px 15px;
         margin-right: 10px;
     }
     .call img {
         filter: brightness(12);
+        margin-bottom: 9px;
+    }
+    .read-all {
+        margin: 0 auto;
+        margin-top: 8%;
+        background: #c32533;
+        color: #fff;
+        font-size: 17px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        box-shadow: 5px 5px 10px #00000029;
+        border-radius: 5px;
+    }
+    .read-all span {
+        margin-right: 10px;
     }
     .get-on {
         width: 40%;
