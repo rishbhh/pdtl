@@ -1626,7 +1626,7 @@ background: rgb(23, 44, 66);
         background-image: url('/assets/resources/images/testimonial-v1.png');
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 8% 0;
+        padding: 6% 0;
     }
     .testim .wrap {
         position: relative;
@@ -1678,9 +1678,9 @@ background: rgb(23, 44, 66);
         right: 70px;
     }
     .testim .dots {
-        text-align: center;
+        text-align: right;
         position: absolute;
-        /* width: 100%; */
+        width: 100%;
         bottom: -50px;
         right: 0;
         display: block;
@@ -1813,12 +1813,12 @@ background: rgb(23, 44, 66);
             box-shadow: 0px 0px 10px 5px #eee;
         }
         70% {
-            -webkit-box-shadow: 0px 0px 10px 5px #ea830e;
-            box-shadow: 0px 0px 10px 5px #ea830e;
+            -webkit-box-shadow: 0px 0px 10px 5px #ffffff;
+            box-shadow: 0px 0px 10px 5px #ffffff;
         }
         100% {
-            -webkit-box-shadow: 0px 0px 0px 0px #ea830e;
-            box-shadow: 0px 0px 0px 0px #ea830e;
+            -webkit-box-shadow: 0px 0px 0px 0px #ffffff;
+            box-shadow: 0px 0px 0px 0px #ffffff;
         }
     }
     @-moz-keyframes testim-scale {
@@ -1831,12 +1831,12 @@ background: rgb(23, 44, 66);
             box-shadow: 0px 0px 10px 5px #eee;
         }
         70% {
-            -moz-box-shadow: 0px 0px 10px 5px #ea830e;
-            box-shadow: 0px 0px 10px 5px #ea830e;
+            -moz-box-shadow: 0px 0px 10px 5px #ffffff;
+            box-shadow: 0px 0px 10px 5px #ffffff;
         }
         100% {
-            -moz-box-shadow: 0px 0px 0px 0px #ea830e;
-            box-shadow: 0px 0px 0px 0px #ea830e;
+            -moz-box-shadow: 0px 0px 0px 0px #ffffff;
+            box-shadow: 0px 0px 0px 0px #ffffff;
         }
     }
     @-ms-keyframes testim-scale {
@@ -1849,12 +1849,12 @@ background: rgb(23, 44, 66);
             box-shadow: 0px 0px 10px 5px #eee;
         }
         70% {
-            -ms-box-shadow: 0px 0px 10px 5px #ea830e;
-            box-shadow: 0px 0px 10px 5px #ea830e;
+            -ms-box-shadow: 0px 0px 10px 5px #ffffff;
+            box-shadow: 0px 0px 10px 5px #ffffff;
         }
         100% {
-            -ms-box-shadow: 0px 0px 0px 0px #ea830e;
-            box-shadow: 0px 0px 0px 0px #ea830e;
+            -ms-box-shadow: 0px 0px 0px 0px #ffffff;
+            box-shadow: 0px 0px 0px 0px #ffffff;
         }
     }
     @-o-keyframes testim-scale {
@@ -1867,12 +1867,12 @@ background: rgb(23, 44, 66);
             box-shadow: 0px 0px 10px 5px #eee;
         }
         70% {
-            -o-box-shadow: 0px 0px 10px 5px #ea830e;
-            box-shadow: 0px 0px 10px 5px #ea830e;
+            -o-box-shadow: 0px 0px 10px 5px #f8f8f8;
+            box-shadow: 0px 0px 10px 5px #ffffff;
         }
         100% {
-            -o-box-shadow: 0px 0px 0px 0px #ea830e;
-            box-shadow: 0px 0px 0px 0px #ea830e;
+            -o-box-shadow: 0px 0px 0px 0px #ffffff;
+            box-shadow: 0px 0px 0px 0px #ffffff;
         }
     }
     @keyframes testim-scale {
@@ -1883,10 +1883,10 @@ background: rgb(23, 44, 66);
             box-shadow: 0px 0px 10px 5px #eee;
         }
         70% {
-            box-shadow: 0px 0px 10px 5px #ea830e;
+            box-shadow: 0px 0px 10px 5px #ffffff;
         }
         100% {
-            box-shadow: 0px 0px 0px 0px #ea830e;
+            box-shadow: 0px 0px 0px 0px #ffffff;
         }
     }
     @-webkit-keyframes testim-content-in {
@@ -2205,14 +2205,14 @@ background: rgb(23, 44, 66);
         font: normal normal 400 19px/29px Sarabun;
         letter-spacing: 2px;
         color: #1a1a1a;
-        padding-right: 11%;
+        padding-right: 0%;
         margin-bottom: 6%;
     }
     .blog-conent>p {
         font: normal normal normal 17px/26px Sarabun;
         letter-spacing: 1px;
         color: #666666;
-        padding-right: 11%;
+        padding-right: 0%;
     }
     .blog>.card>.inner-card>.date-con>.cat>.blog-conent>a>.icons {
         letter-spacing: -.01em;
@@ -3309,9 +3309,10 @@ button:last-child {
     margin-right: 0;
 }
 
-button:hover {
+
+/* button:hover {
     background-color: #60AFFF;
-}
+} */
 
 button:focus {
     outline: none;
@@ -3447,7 +3448,7 @@ button:focus {
     color: #fff;
     font-size: 18px;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 4px #000;
+    text-shadow: 1px 1px 4px #0006;
     line-height: 1.294em;
     align-items: center;
     display: flex;
