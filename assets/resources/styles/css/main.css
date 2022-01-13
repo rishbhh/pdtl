@@ -121,7 +121,7 @@ button {
 /* Dropdown menu */
 
 .dropdown-container {
-    width: 100%;
+    /* width: 100%; */
     display: none;
     margin-top: 1rem;
     position: relative;
@@ -170,6 +170,7 @@ button {
 
 .dropdown-container>ul>li {
     padding-block: .75em;
+    margin-left: 0 !important;
 }
 
 .dropdown-container>ul>li:hover {
@@ -1404,7 +1405,7 @@ background: rgb(23, 44, 66);
     .title {
         font-size: 2.1rem;
         font-weight: 700;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         color: var(--primary-text-color);
     }
     .intro {
@@ -1559,12 +1560,12 @@ background: rgb(23, 44, 66);
         letter-spacing: 1px;
         padding-left: 20px;
         margin-top: 22px;
-        font-size: 23px;
+        font-size: 18px;
         color: #9f9f9f;
         font-weight: 400;
     }
     .cat>h6>span {
-        font: normal normal normal 20px/24px Sarabun;
+        font: normal normal normal 17px/24px Sarabun;
         letter-spacing: 1px;
         color: #0C5EAF;
     }
@@ -2263,6 +2264,7 @@ background: rgb(23, 44, 66);
     .red-div {
         width: 40%;
         background: #ce0404;
+        height: 21.8vh;
     }
     .red-con>h6 {
         text-align: right;
@@ -2392,7 +2394,7 @@ background: rgb(23, 44, 66);
     .slick-slide img {
         display: block;
         margin: 0 auto;
-        padding: 40px;
+        padding: 50px;
     }
     .slick-slide.slick-loading img {
         display: none;
@@ -3427,8 +3429,9 @@ button:focus {
 
 .navbar ul li {
     height: 100%;
-    padding: 0 28px;
+    padding: 0 0px;
     position: relative;
+    margin-left: 40px;
 }
 
 .navbar>ul>li::before {
