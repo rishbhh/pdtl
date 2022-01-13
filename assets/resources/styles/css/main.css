@@ -1403,9 +1403,9 @@ background: rgb(23, 44, 66);
         border-radius: 15px;
     }
     .title {
-        font-size: 2.1rem;
+        font-size: 2.5rem;
         font-weight: 700;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         color: var(--primary-text-color);
     }
     .intro {
@@ -2793,15 +2793,20 @@ background: rgb(23, 44, 66);
         width: 100%;
         background: #00121b;
         display: block;
+        background-image: url('/assets/resources/images/footer-bg.png');
+        background-size: cover;
     }
     .inner-footer {
         width: 95%;
         margin: auto;
-        padding: 80px 10px;
+        padding: 79px 20px 80px 10px;
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
         justify-content: center;
+    }
+    .inner-footer:last-child2 {
+        padding-right: 10px;
     }
     .footer-items {
         width: 23%;
@@ -2810,7 +2815,7 @@ background: rgb(23, 44, 66);
         color: #fff;
     }
     .fp-l {
-        padding-left: 4%;
+        padding-left: 2%;
         padding-right: 0;
     }
     .footer-items img {
@@ -2820,7 +2825,7 @@ background: rgb(23, 44, 66);
         display: flex;
     }
     .footer-items h6 {
-        margin-top: 17px;
+        margin-top: 37px;
         margin-bottom: 7px;
         color: #c01b27;
         letter-spacing: 1px;
@@ -2840,10 +2845,10 @@ background: rgb(23, 44, 66);
         width: 30%;
     }
     .footer-items .subit input {
-        width: 72%;
+        width: 62%;
         background: transparent;
         border: 2px solid #ffffff38;
-        padding: 8px;
+        padding: 13px 9px;
     }
     .footer-items .subit button {
         margin: 0;
@@ -2924,7 +2929,7 @@ background: rgb(23, 44, 66);
     }
     .footer-bottom {
         padding: 30px 0px;
-        background: #00121b;
+        /* background: #00121b; */
         color: rgba(255, 255, 255, 0.288);
         font-size: 15px;
         border-top: 1px solid #3e3e3e;
@@ -3458,6 +3463,12 @@ button:focus {
 }
 
 .navbar>ul>li.current-menu::before {
+    transform: scale3d(1, 1, 1);
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .3s;
+}
+
+.navbar>ul>li:hover::before {
     transform: scale3d(1, 1, 1);
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition-duration: .3s;
