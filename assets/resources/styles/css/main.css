@@ -1042,7 +1042,7 @@ body {
     }
     .read-all {
         margin: 0 auto;
-        margin-top: 8%;
+        margin-top: 6%;
         background: #c32533;
         color: #fff;
         font-size: 17px;
@@ -1402,9 +1402,9 @@ background: rgb(23, 44, 66);
         border-radius: 15px;
     }
     .title {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
         font-weight: 700;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         color: var(--primary-text-color);
     }
     .intro {
@@ -1426,7 +1426,7 @@ background: rgb(23, 44, 66);
     }
     .accordion-item-title {
         color: #1a1a1a;
-        font-size: 1.5em;
+        font-size: 1.3em;
         letter-spacing: 1px;
         font-weight: 500;
         text-align: left;
@@ -1528,7 +1528,7 @@ background: rgb(23, 44, 66);
         justify-content: space-between;
     }
     .date-con>.left-box {
-        width: 23%;
+        width: 28%;
         background: #fff;
         box-shadow: 1px 1px 8px #00000044;
         /* position: absolute; */
@@ -1539,14 +1539,14 @@ background: rgb(23, 44, 66);
     }
     .date-con>.left-box>.date {
         text-align: center;
-        font: normal normal 600 36px/44px Sarabun;
+        font: normal normal 600 34px/43px Sarabun;
         letter-spacing: 4.8px;
         color: #0C5EAF;
         text-transform: uppercase;
     }
     .date-con>.left-box>.month {
         text-align: center;
-        font: normal normal bold 20px/36px Montserrat;
+        font: normal normal bold 16px/30px Sarabun;
         letter-spacing: 2px;
         color: #000000;
         text-transform: uppercase;
@@ -1574,10 +1574,10 @@ background: rgb(23, 44, 66);
         text-align: left;
     }
     .news-conent>h4 {
-        font: normal normal 400 23px/36px Sarabun;
+        font: normal normal 600 21px/33px Sarabun;
         letter-spacing: 2px;
         color: #1a1a1a;
-        padding-right: 11%;
+        padding-right: 7%;
         margin-bottom: 6%;
     }
     .news-conent>p {

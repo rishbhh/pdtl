@@ -257,9 +257,9 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
             accordionItemBody.style.maxHeight = 0;
         }
     });
-    accordionItemHeader.addEventListener("click", function() {
-        document.getElementById("test").scrollIntoView({ behavior: "smooth" });
-    });
+    // accordionItemHeader.addEventListener("click", function() {
+    //     document.getElementById("test").scrollIntoView({ behavior: "smooth" });
+    // });
 });
 
 
