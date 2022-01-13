@@ -1398,7 +1398,7 @@ background: rgb(23, 44, 66);
         margin: 0 auto;
         width: 100%;
         background-color: #fff;
-        padding: 4em 5em;
+        padding: 4em 0em;
         border-radius: 15px;
     }
     .title {
@@ -1602,7 +1602,6 @@ background: rgb(23, 44, 66);
         width: 25%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
     }
     .t-img>img {
         width: 100px;
@@ -1623,7 +1622,7 @@ background: rgb(23, 44, 66);
         color: #777;
     }
     .m-content>.name {
-        font-size: 22px;
+        font-size: 18px;
         letter-spacing: 2px;
         padding-right: 1%;
     }
@@ -1762,7 +1761,7 @@ background: rgb(23, 44, 66);
         letter-spacing: 1px;
     }
     .testim .cont div p {
-        font-size: 1.8em;
+        font-size: 1.5em;
         color: rgb(255, 255, 255);
         width: 60%;
         letter-spacing: 2px;
