@@ -467,9 +467,11 @@ button:hover {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 23%;
+    width: 19%;
     height: 50px;
-    margin: 0px 10px;
+    letter-spacing: 1px;
+    margin: 0px 35px;
+    font-weight: 500;
     text-align: left;
     font-size: 14px;
     color: #fff;
@@ -3460,11 +3462,32 @@ button:focus {
 
 .navicon {
     padding: 0px 20px;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
     height: 100%;
     align-items: center;
     display: inline-flex;
+    position: relative;
+}
+
+.navicon::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 1px;
+    height: 75%;
+    background: #fff;
+}
+
+.navicon::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 1px;
+    height: 75%;
+    background: #fff;
 }
 
 .nav-item a:hover {
@@ -3507,8 +3530,6 @@ button:focus {
 
 .fixed-header .navicon {
     padding: 0px 20px;
-    border-left: 1px solid rgb(0 0 0 / 33%);
-    border-right: 1px solid rgb(0 0 0 / 33%);
 }
 
 .fixed-header .nav-item a {
