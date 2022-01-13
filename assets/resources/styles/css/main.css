@@ -333,17 +333,18 @@ button {
 } */
 
 .m--before-sliding .fnc-slide__heading-line {
-    transform: translateY(100%);
+    transform: translateX(10%);
 }
 
 .m--active-slide .fnc-slide__heading-line {
     transition: transform 1.5s 1s;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .m--previous-slide .fnc-slide__heading-line {
     transition: transform 1.5s;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
 }
 
 .fnc-slide__heading-line span {
@@ -351,17 +352,18 @@ button {
 }
 
 .m--before-sliding .fnc-slide__heading-line span {
-    transform: translateY(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
 }
 
 .m--active-slide .fnc-slide__heading-line span {
     transition: transform 1.5s 1s;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .m--previous-slide .fnc-slide__heading-line span {
     transition: transform 1.5s;
-    transform: translateY(100%);
+    transform: translateX(10%);
 }
 
 .fnc-slide__action-btn {
@@ -2933,8 +2935,9 @@ background: rgb(23, 44, 66);
     .footer-bottom {
         padding: 30px 0px;
         /* background: #00121b; */
-        color: rgba(255, 255, 255, 0.288);
-        font-size: 15px;
+        color: rgb(255 255 255 / 60%);
+        font-size: 16px;
+        font-weight: 300;
         border-top: 1px solid #3e3e3e;
         text-align: center;
         letter-spacing: 1px;
@@ -3583,7 +3586,7 @@ button:focus {
 }
 
 .call-us a {
-    padding: 8px 20px;
+    padding: 10px 20px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 2px 2px 2px #00000029;
     border-radius: 5px;
@@ -3592,6 +3595,11 @@ button:focus {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.call-us a span img {
+    margin-right: 10px;
+    width: 18px;
 }
 
 .icons {
