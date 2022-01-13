@@ -2265,6 +2265,13 @@ background: rgb(23, 44, 66);
         width: 40%;
         background: #ce0404;
         height: 21.8vh;
+        justify-content: flex-start;
+    }
+    .red-img img {
+        width: 210px;
+    }
+    .blue-con {
+        width: 72%;
     }
     .red-con>h6 {
         text-align: right;
@@ -2289,7 +2296,7 @@ background: rgb(23, 44, 66);
         color: #fff;
     }
     .blue-con>h4 {
-        font: normal normal bold 36px/58px Sarabun;
+        font: normal normal bold 33px/34px Sarabun;
         letter-spacing: 1.8px;
         color: #FFFFFF;
         text-transform: uppercase;
