@@ -3555,12 +3555,12 @@ button:focus {
 }
 
 .call-us a {
-    padding: 13px 31px;
+    padding: 8px 20px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 2px 2px 2px #00000029;
     border-radius: 5px;
     color: #000;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
