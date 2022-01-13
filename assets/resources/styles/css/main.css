@@ -1527,6 +1527,7 @@ background: rgb(23, 44, 66);
         display: flex;
         width: 100%;
         justify-content: space-between;
+        margin-top: 10px;
     }
     .date-con>.left-box {
         width: 28%;
@@ -2150,7 +2151,7 @@ background: rgb(23, 44, 66);
     }
     .blog>.card {
         width: 33%;
-        padding: 0px 1%;
+        padding: 1px 1.2%;
     }
     .blog>.card>.inner-card {
         width: 100%;
@@ -2176,14 +2177,14 @@ background: rgb(23, 44, 66);
     }
     .blog>.card>.inner-card>.date-con>.left-box>.date {
         text-align: left;
-        font: normal normal 600 36px/44px Sarabun;
-        letter-spacing: 4.8px;
+        font: normal normal 600 42px/25px Sarabun;
+        letter-spacing: 2.8px;
         color: #1a1a1a;
         text-transform: uppercase;
     }
     .blog>.card>.inner-card>.date-con>.left-box>.month {
         text-align: revert;
-        font: normal normal bold 17px/36px Montserrat;
+        font: normal normal bold 17px/53px Sarabun;
         letter-spacing: 2px;
         color: #000000;
         text-transform: capitalize;
@@ -2196,12 +2197,13 @@ background: rgb(23, 44, 66);
         letter-spacing: 1px;
         padding-left: 20px;
         margin-top: 22px;
-        font-size: 18px;
+        margin-bottom: 13px;
+        font-size: 16px;
         color: #9f9f9f;
         font-weight: 400;
     }
     .blog>.card>.inner-card>.date-con>.cat>h6>span {
-        font: normal normal normal 20px/24px Sarabun;
+        font: normal normal normal 16px/24px Sarabun;
         letter-spacing: 1px;
         color: #0C5EAF;
     }
@@ -2212,17 +2214,18 @@ background: rgb(23, 44, 66);
         margin-left: 19px;
     }
     .blog-conent>h4 {
-        font: normal normal 400 19px/29px Sarabun;
-        letter-spacing: 2px;
+        font: normal normal 600 22px/29px Sarabun;
+        letter-spacing: 1px;
         color: #1a1a1a;
         padding-right: 0%;
-        margin-bottom: 6%;
+        margin-bottom: 10%;
     }
     .blog-conent>p {
         font: normal normal normal 17px/26px Sarabun;
         letter-spacing: 1px;
         color: #666666;
         padding-right: 0%;
+        margin-bottom: 9%;
     }
     .blog>.card>.inner-card>.date-con>.cat>.blog-conent>a>.icons {
         letter-spacing: -.01em;
@@ -2234,7 +2237,7 @@ background: rgb(23, 44, 66);
         height: auto;
         justify-content: center;
         background: #ce0404;
-        padding: 20px 20px;
+        padding: 25px 25px;
         position: relative;
         margin-top: 10px;
         margin-right: 10px;
@@ -2243,7 +2246,7 @@ background: rgb(23, 44, 66);
         display: flex;
         align-items: center;
         width: 100%;
-        font-size: 17px;
+        font-size: 19px;
         color: #1a1a1a;
         letter-spacing: 1px;
         font-weight: 500;
