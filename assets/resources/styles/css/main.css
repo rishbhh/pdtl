@@ -309,11 +309,12 @@ button {
     font-size: 62px;
     color: #fff;
     word-spacing: 10px;
+    line-height: 1.1;
 }
 
 .fnc-slide__heading-line .smal {
     text-align: left;
-    font: normal normal 500 31px/0px Montserrat;
+    font: normal normal 600 27px/0px Montserrat;
     letter-spacing: 1.8px;
     color: #FFFFFF;
     text-shadow: 5px 5px 5px #00000052;
@@ -321,7 +322,8 @@ button {
 }
 
 .fnc-slide__heading-line .bi {
-    font-weight: 800;
+    font-weight: 900;
+    text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.37);
 }
 
 
