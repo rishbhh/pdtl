@@ -2927,6 +2927,9 @@ background: rgb(23, 44, 66);
     .social-media i:hover {
         transform: scale(1.5);
     }
+    .mini-w {
+        width: 17%;
+    }
     .footer-bottom {
         padding: 30px 0px;
         /* background: #00121b; */
