@@ -1060,7 +1060,7 @@ body {
         padding-right: 4%;
     }
     .get-on h2 {
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: 0.01em;
         color: #1a1a1a;
         font-size: 40px;
@@ -1071,7 +1071,7 @@ body {
         word-wrap: break-word;
     }
     .get-on p {
-        margin: 20px 0px;
+        margin: 10px 0px;
         font-size: 15px;
         letter-spacing: 0.9px;
         color: #707070;
