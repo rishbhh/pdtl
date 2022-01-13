@@ -903,10 +903,11 @@ body {
         display: flex;
         align-items: center;
         width: 100%;
-        font-size: 17px;
+        font-size: 19px;
         color: #1a1a1a;
         letter-spacing: 1px;
         font-weight: 500;
+        margin-top: 6%;
     }
     .div-con>a>.icons {
         margin-right: 10px;
@@ -1114,19 +1115,19 @@ body {
     .radio-label:after {
         content: "";
         display: block;
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
         position: absolute;
-        left: 4px;
-        top: 4px;
+        left: 2px;
+        top: 2px;
         border-radius: 50%;
     }
     .radio-border {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         display: inline-block;
-        outline: solid 3px #000000;
-        border-radius: 50%;
+        outline: solid 2px #6d6d6d;
+        border-radius: 0%;
         position: absolute;
         left: 0px;
         top: 0px;
@@ -3450,11 +3451,11 @@ button:focus {
 
 .nav-item a {
     font-family: Sarabun, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: -.01em;
     color: #fff;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-shadow: 1px 1px 4px #0006;
     line-height: 1.294em;
     align-items: center;
@@ -3554,12 +3555,12 @@ button:focus {
 }
 
 .call-us a {
-    padding: 8px 34px;
+    padding: 13px 31px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 2px 2px 2px #00000029;
     border-radius: 5px;
     color: #000;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -3584,7 +3585,7 @@ button:focus {
 }
 
 .navicon .fas {
-    font-size: 24px;
+    font-size: 21px;
     color: #fff;
 }
 
