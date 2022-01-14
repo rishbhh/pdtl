@@ -3199,7 +3199,7 @@ background: rgb(23, 44, 66);
         color: #666666;
     }
     .cr-conent>.price {
-        font: normal normal 600 30px/48px Sarabun;
+        font: normal normal 800 30px/48px Sarabun;
         letter-spacing: 2.4px;
         color: #000000;
         margin-top: 3%;
@@ -3699,7 +3699,7 @@ button:focus {
     position: relative;
     top: 0;
     bottom: 0;
-    height: 100vh;
+    height: 0vh;
     width: 100%;
 }
 

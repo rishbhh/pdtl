@@ -36,13 +36,16 @@
     .enroll>a {
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 5px 5px 10px #00000029;
-        padding: 15px 15px;
+        padding: 18px 15px;
         margin-left: 40px;
         font-size: 14px;
         color: #1a1a1a;
         letter-spacing: 1px;
         font-weight: 500;
         border-radius: 5px;
+    }
+    .course>.card>.inner-card>.imgg>.dat {
+        right: 45px;
     }
     .h-title {
         font-family: Sarabun, sans-serif;
@@ -82,6 +85,13 @@
         width: 60%;
         background: #005EAF;
         padding: 2.6% 3%;
+        height: 25.3vh;
+    }
+    .bl-tr .flex-div {
+        width: 80%;
+    }
+    .blue-con {
+        width: 55%;
     }
     .blog-conent>p {
         font: normal normal normal 14px/26px Sarabun;
