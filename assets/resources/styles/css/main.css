@@ -300,11 +300,11 @@ button {
 .fnc-slide__heading {
     margin-bottom: 10px;
     text-transform: uppercase;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .fnc-slide__heading-line {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     padding-right: 42%;
     font-size: 62px;
@@ -342,9 +342,31 @@ button {
 }
 
 .m--previous-slide .fnc-slide__heading-line {
-    transition: transform 1.5s;
-    transform: translateX(-100%);
-    opacity: 0;
+    opacity: 1;
+    -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+    animation: fadeInUp 1s ease-in-out 0s forwards;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0%, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(-20%, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0%, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(-20%, 0, 0);
+    }
 }
 
 .fnc-slide__heading-line span {
@@ -352,11 +374,11 @@ button {
 }
 
 .m--before-sliding .fnc-slide__heading-line span {
-    transform: translateX(-100%);
-    opacity: 0;
+    /* transform: translateX(-10%); */
 }
 
-.m--active-slide .fnc-slide__heading-line span {
+
+/* .m--active-slide .fnc-slide__heading-line span {
     transition: transform 1.5s 1s;
     transform: translateX(0);
 }
@@ -364,6 +386,16 @@ button {
 .m--previous-slide .fnc-slide__heading-line span {
     transition: transform 1.5s;
     transform: translateX(10%);
+} */
+
+.m--previous-slide .fnc-slide__content {
+    transition: transform 1.5s;
+    transform: translateX(10%);
+}
+
+.m--active-slide .fnc-slide__content {
+    transition: transform 1.5s 1s;
+    transform: translateX(0);
 }
 
 .fnc-slide__action-btn {
