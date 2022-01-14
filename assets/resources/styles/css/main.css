@@ -148,7 +148,7 @@ button {
     .dropdown-container {
         display: block;
         position: absolute;
-        left: 0;
+        left: -29px;
         box-shadow: none;
         pointer-events: none;
         overflow: hidden;
@@ -173,6 +173,13 @@ button {
     margin-left: 0 !important;
 }
 
+.dropdown-container>ul>li>a {
+    font-size: 18px;
+    color: #000000;
+    text-shadow: none;
+    padding: 10px;
+}
+
 .dropdown-container>ul>li:hover {
     background-color: #4fff8a;
     color: #222;
@@ -191,6 +198,9 @@ button {
     }
     .menu__button:hover>.dropdown-container {
         pointer-events: initial;
+    }
+    .menu__button>.dropdown-container>ul {
+        display: block;
     }
     .menu__button:hover>.dropdown-container>ul {
         transform: translate(0, 0);
@@ -1081,7 +1091,7 @@ body {
         background: #c32533;
         color: #fff;
         font-size: 17px;
-        padding: 10px 20px;
+        padding: 15px 25px;
         letter-spacing: 1px;
         text-transform: uppercase;
         box-shadow: 5px 5px 10px #00000029;
@@ -1312,7 +1322,7 @@ body {
         background: #c01b27;
         text-decoration: none;
         display: inline-block;
-        padding: 10px 25px;
+        padding: 15px 25px;
         border-radius: .3rem;
         font-weight: 700;
         letter-spacing: .5px;
@@ -3445,6 +3455,18 @@ button:focus {
     z-index: 100;
 }
 
+.down-a {
+    margin-left: 10px;
+}
+
+.down-a .fas {
+    color: #fff;
+}
+
+.fixed-header .down-a .fas {
+    color: #000;
+}
+
 .link img {
     width: 150px;
     padding-left: 27px;
@@ -3501,6 +3523,12 @@ button:focus {
 }
 
 .navbar>ul>li.current-menu::before {
+    transform: scale3d(1, 1, 1);
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .3s;
+}
+
+.navbar>ul>li.current-menu:hover::before {
     transform: scale3d(1, 1, 1);
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition-duration: .3s;
@@ -3580,16 +3608,22 @@ button:focus {
 }
 
 .fixed-header .call-us a {
-    padding: 8px 34px;
+    padding: 10px 20px;
     background: #c32533 0% 0% no-repeat padding-box;
     box-shadow: 2px 2px 2px #00000029;
     border: 0px solid #c32533;
     border-radius: 5px;
     color: #fff;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.fixed-header .call-us a span img {
+    margin-right: 10px;
+    width: 18px;
+    filter: brightness(16.7);
 }
 
 .fixed-header .navicon .fas {
