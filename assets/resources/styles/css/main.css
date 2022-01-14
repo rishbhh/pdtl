@@ -723,7 +723,7 @@ body {
 
 .example-slider .fnc-slide-4 .fnc-slide__inner,
 .example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-    background-image: url("/assets/resources/images/slider/Header-2.png");
+    background-image: url("/assets/resources/images/slider/Header-4.png");
 }
 
 .example-slider .fnc-slide-4 .fnc-slide__inner:before {
@@ -2500,7 +2500,7 @@ background: rgb(23, 44, 66);
         letter-spacing: 3.2px;
         color: #FFFFFF;
         text-shadow: 10px 10px 12px #00000029;
-        text-transform: uppercase;
+        text-transform: capitalize;
         margin-left: 8%;
     }
     /* about */

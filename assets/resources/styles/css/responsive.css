@@ -1,11 +1,15 @@
 @media only screen and (max-width: 1280px) {
     .fnc-slide__content {
-        top: 26%;
+        top: 32%;
     }
     .navbar ul li {
         height: 100%;
         padding: 0px 15px;
         position: relative;
+        margin-left: 10px;
+    }
+    .nav-item>a {
+        font-size: 14px;
     }
     .fnc-slide__heading-line {
         font-size: 51px;
@@ -17,6 +21,28 @@
         color: #FFFFFF;
         text-shadow: 5px 5px 5px #00000052;
         text-transform: uppercase;
+    }
+    .red-div {
+        height: 25.3vh;
+    }
+    .hero-banner h4 {
+        font: normal normal bold 64px/86px Montserrat;
+        letter-spacing: 3.2px;
+        color: #FFFFFF;
+        text-shadow: 10px 10px 12px #00000029;
+        text-transform: capitalize;
+        margin-left: 8%;
+    }
+    .enroll>a {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 5px 5px 10px #00000029;
+        padding: 15px 15px;
+        margin-left: 40px;
+        font-size: 14px;
+        color: #1a1a1a;
+        letter-spacing: 1px;
+        font-weight: 500;
+        border-radius: 5px;
     }
     .h-title {
         font-family: Sarabun, sans-serif;
