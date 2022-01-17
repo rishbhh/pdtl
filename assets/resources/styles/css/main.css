@@ -2253,7 +2253,7 @@ background: rgb(23, 44, 66);
     }
     .blog>.card {
         width: 33%;
-        padding: 1px 1.2%;
+        padding: 1px 2%;
     }
     .blog>.card>.inner-card {
         width: 100%;
@@ -2316,7 +2316,7 @@ background: rgb(23, 44, 66);
         margin-left: 19px;
     }
     .blog-conent>h4 {
-        font: normal normal 600 22px/29px Sarabun;
+        font: normal normal 600 20px/29px Sarabun;
         letter-spacing: 1px;
         color: #1a1a1a;
         padding-right: 0%;
@@ -2376,7 +2376,7 @@ background: rgb(23, 44, 66);
         width: 266px;
     }
     .blue-con {
-        width: 51%;
+        width: 61%;
     }
     .red-con>h6 {
         text-align: right;
@@ -2556,7 +2556,7 @@ background: rgb(23, 44, 66);
     }
     .hero-banner h4 {
         font: normal normal 600 56px/86px sarabun;
-        letter-spacing: 3.2px;
+        letter-spacing: 1px;
         color: #FFFFFF;
         text-shadow: 10px 10px 12px #00000069;
         text-transform: capitalize;
@@ -3182,6 +3182,7 @@ background: rgb(23, 44, 66);
     .tabs ul li a {
         color: #1a1a1a;
         letter-spacing: 1px;
+        font-weight: 700;
     }
     .tabs span {
         display: block;
