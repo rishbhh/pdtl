@@ -1139,6 +1139,15 @@ body {
         text-transform: uppercase;
         box-shadow: 5px 5px 10px #00000029;
         border-radius: 5px;
+        overflow: hidden;
+    }
+    .read-all:before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        width: 0;
+        height: 10px;
+        background-color: #000000;
     }
     .read-all span {
         margin-right: 10px;
@@ -2361,10 +2370,10 @@ background: rgb(23, 44, 66);
         justify-content: flex-start;
     }
     .red-img img {
-        width: 210px;
+        width: 266px;
     }
     .blue-con {
-        width: 62%;
+        width: 51%;
     }
     .red-con>h6 {
         text-align: right;
@@ -3045,15 +3054,35 @@ background: rgb(23, 44, 66);
         font-size: 15px;
         letter-spacing: 0.5px;
     }
-    .footer ul a {
+    .footer ul li a {
         text-decoration: none;
         outline: none;
         color: #fff;
         transition: 0.3s;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        background-size: 0 1px;
+        transition: background-size .4s cubic-bezier(.22, .61, .36, 1);
     }
-    .footer ul a:hover {
+    .footer ul li a:hover {
+        background-size: 100% 1px;
+    }
+    .footer ul li a::after {
+        content: '';
+        width: 0;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .footer ul li a:hover::after {
+        width: 100%;
+    }
+    /* .footer ul a:hover {
         color: #ff9800;
-    }
+    } */
     .footer ul li {
         margin: 10px 0;
         height: 25px;
@@ -3334,6 +3363,9 @@ background: rgb(23, 44, 66);
         margin-left: 10px;
     }
 }
+
+
+/* Button Animation */
 
 
 /* slider обертка */
