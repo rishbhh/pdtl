@@ -163,6 +163,11 @@ button {
 
 /* Dropdown menu content*/
 
+.black {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
 .dropdown-container>ul {
     background-color: rgb(255, 255, 255);
     transition: 250ms;
@@ -181,7 +186,7 @@ button {
 }
 
 .dropdown-container>ul>li:hover {
-    background-color: #4fff8a;
+    /* background-color: #4fff8a; */
     color: #222;
 }
 
@@ -3472,6 +3477,16 @@ button:focus {
     padding-left: 27px;
 }
 
+.fixed-header .link .white {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.fixed-header .link .black {
+    display: block;
+    filter: none;
+}
+
 .navbar {
     height: 100%;
     margin-left: auto;
@@ -3504,9 +3519,9 @@ button:focus {
 
 .navbar ul li {
     height: 100%;
-    padding: 0 0px;
+    padding: 0 15px;
     position: relative;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .navbar>ul>li::before {
@@ -3614,20 +3629,21 @@ button:focus {
     border: 0px solid #c32533;
     border-radius: 5px;
     color: #fff;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .fixed-header .call-us a span img {
-    margin-right: 10px;
-    width: 18px;
+    margin-right: 7px;
+    width: 19px;
     filter: brightness(16.7);
+    margin-top: -2px;
 }
 
 .fixed-header .navicon .fas {
-    font-size: 24px;
+    font-size: 16px;
     color: rgb(0, 0, 0);
 }
 
@@ -3687,7 +3703,7 @@ button:focus {
 }
 
 .navicon .fas {
-    font-size: 21px;
+    font-size: 16px;
     color: #fff;
 }
 
