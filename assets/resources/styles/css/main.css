@@ -141,6 +141,25 @@ button {
     box-shadow: 0 0 2rem #222;
 }
 
+.dropdown-container>ul>li>a>.plus {
+    position: absolute;
+    transform: rotate(0);
+    transition: left .2s ease-out, right .2s ease-out, transform .2s ease-out;
+    left: -28px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.dropdown-container>ul>li>a {
+    position: relative;
+    display: flex;
+    white-space: normal;
+    margin: 14px 0;
+    overflow: hidden;
+    transition: padding .2s ease-out;
+    padding-right: 28px;
+}
+
 
 /* Dropdown menu - desktop */
 
@@ -148,11 +167,12 @@ button {
     .dropdown-container {
         display: block;
         position: absolute;
-        left: -29px;
+        left: 0px;
         box-shadow: none;
         pointer-events: none;
         overflow: hidden;
         margin-top: 0;
+        width: 270px;
         border-radius: 0 0 .25em .25em;
     }
     .dropdown-container::before {
@@ -175,6 +195,7 @@ button {
 
 .dropdown-container>ul>li {
     padding-block: .75em;
+    padding: 0 !important;
     margin-left: 0 !important;
 }
 
@@ -194,12 +215,23 @@ button {
     display: block;
 }
 
+.dropdown-container>ul>li:hover>a {
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.dropdown-container>ul>li:hover>a>.plus {
+    left: 6px;
+    transform: rotate( 90deg);
+    transition: left .2s ease-out, right .2s ease-out, transform .2s ease-out 80ms;
+}
+
 
 /* Dropdown menu content - desktop */
 
 @media (min-width: 40rem) {
     .dropdown-container>ul {
-        transform: translate(0, -100%);
+        transform: translate(0, -107%);
     }
     .menu__button:hover>.dropdown-container {
         pointer-events: initial;
@@ -963,6 +995,12 @@ body {
     }
     .div-con>a>.icons {
         margin-right: 10px;
+        transform: rotate(0);
+        transform-origin: center;
+        transition: transform .2s ease-out;
+    }
+    .div-con>a:hover>.icons {
+        transform: rotate(90deg);
     }
     .custom-icon {
         position: relative;
@@ -1124,6 +1162,9 @@ body {
         margin: 10px 0px;
         font-size: 15px;
         letter-spacing: 0.9px;
+        color: #707070;
+    }
+    .get-on p a {
         color: #707070;
     }
     .get-on>.no {
@@ -1454,7 +1495,7 @@ background: rgb(23, 44, 66);
     .title {
         font-size: 2.5rem;
         font-weight: 700;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         color: var(--primary-text-color);
     }
     .intro {
@@ -1754,7 +1795,7 @@ background: rgb(23, 44, 66);
         height: 16px;
         border-radius: 50%;
         border: 2px solid rgb(255, 255, 255);
-        margin: 0 10px;
+        margin: 0 7px;
         cursor: pointer;
         -webkit-transition: all .5s ease-in-out;
         -ms-transition: all .5s ease-in-out;
@@ -1767,16 +1808,16 @@ background: rgb(23, 44, 66);
     .testim .dots .dot:hover {
         background: #ce0404;
         border-color: #ce0404;
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
     }
-    .testim .dots .dot.active {
+    /* .testim .dots .dot.active {
         -webkit-animation: testim-scale .5s ease-in-out forwards;
         -moz-animation: testim-scale .5s ease-in-out forwards;
         -ms-animation: testim-scale .5s ease-in-out forwards;
         -o-animation: testim-scale .5s ease-in-out forwards;
         animation: testim-scale .5s ease-in-out forwards;
-    }
+    } */
     .testim .cont {
         position: relative;
         overflow: hidden;
@@ -2340,7 +2381,8 @@ background: rgb(23, 44, 66);
     .blue-div {
         width: 60%;
         background: #005EAF;
-        padding: 11px 3%;
+        padding: 11px 0%;
+        height: 24vh;
     }
     .blue-con>h6 {
         font: normal normal bold 24px/58px Sarabun;
@@ -2501,10 +2543,10 @@ background: rgb(23, 44, 66);
         display: flex;
     }
     .hero-banner h4 {
-        font: normal normal bold 64px/86px Montserrat;
+        font: normal normal 600 56px/86px Montserrat;
         letter-spacing: 3.2px;
         color: #FFFFFF;
-        text-shadow: 10px 10px 12px #00000029;
+        text-shadow: 10px 10px 12px #00000069;
         text-transform: capitalize;
         margin-left: 8%;
     }
@@ -2632,7 +2674,7 @@ background: rgb(23, 44, 66);
         justify-content: center;
         background: transparent;
         padding: 28px 28px;
-        border-color: #474747;
+        border-color: #c01b27;
         position: relative;
     }
     .info-stp .contents .icons:before {
@@ -2640,7 +2682,7 @@ background: rgb(23, 44, 66);
         position: absolute;
         width: 14px;
         height: 2px;
-        background-color: #474747;
+        background-color: #c01b27;
         border-radius: 20px;
         pointer-events: all;
         transition: all 0.3s ease-in-out;
@@ -2650,7 +2692,7 @@ background: rgb(23, 44, 66);
         position: absolute;
         width: 2px;
         height: 14px;
-        background-color: #474747;
+        background-color: #c01b27;
         border-radius: 20px;
         transition: all 0.3s ease-in-out;
     }
@@ -2676,6 +2718,12 @@ background: rgb(23, 44, 66);
     .content-div a .icons {
         margin-right: 10px;
         padding: 28px 28px;
+        transform: rotate(0);
+        transform-origin: center;
+        transition: transform .2s ease-out;
+    }
+    .content-div a:hover .icons {
+        transform: rotate( 90deg);
     }
     .red-traning {
         width: 100%;
@@ -2742,7 +2790,6 @@ background: rgb(23, 44, 66);
     .services-grid {
         display: flex;
         padding: 50px 50px 40px;
-        margin-bottom: 40px;
         position: relative;
         z-index: 1;
         align-items: flex-end;
@@ -2878,7 +2925,7 @@ background: rgb(23, 44, 66);
         left: 170px;
     }
     .section-padding {
-        padding: 190px 0 160px;
+        /* padding: 190px 0 160px; */
         margin-top: 60px;
     }
     .section {
@@ -2943,6 +2990,9 @@ background: rgb(23, 44, 66);
         font-size: 1.8em;
         font-weight: 600;
         letter-spacing: 1px;
+    }
+    .footer-items a h4 {
+        color: #fff;
     }
     .footer-items h3 {
         letter-spacing: 1px;
@@ -3065,6 +3115,7 @@ background: rgb(23, 44, 66);
         padding: 1% 0% 0% 11%;
         width: 85%;
         background: #1A1A1A 0% 0% no-repeat padding-box;
+        margin-bottom: 5%;
     }
     .traning-slider .m-title {
         color: #fff;
@@ -3588,7 +3639,7 @@ button:focus {
     top: 0;
     left: 0;
     width: 100%;
-    height: 5px;
+    height: 3px;
     background: var(--qode-main-color);
     transform: scale3d(0, 1, 1);
     transform-origin: left;
