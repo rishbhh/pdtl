@@ -1074,6 +1074,9 @@ body {
         padding: 100px 0;
         margin-bottom: 7%;
     }
+    .left-m {
+        margin-right: 10%;
+    }
     /* Section Two */
     .secion-2 {
         padding: 160px 0;
@@ -2552,7 +2555,7 @@ background: rgb(23, 44, 66);
         display: flex;
     }
     .hero-banner h4 {
-        font: normal normal 600 56px/86px Montserrat;
+        font: normal normal 600 56px/86px sarabun;
         letter-spacing: 3.2px;
         color: #FFFFFF;
         text-shadow: 10px 10px 12px #00000069;
