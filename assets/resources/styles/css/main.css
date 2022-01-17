@@ -3521,7 +3521,6 @@ button:focus {
     height: 100%;
     padding: 0 15px;
     position: relative;
-    margin-left: 30px;
 }
 
 .navbar>ul>li::before {
