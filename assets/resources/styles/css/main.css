@@ -2710,10 +2710,10 @@ background: rgb(23, 44, 66);
         margin-left: 10px;
         line-height: 0;
     }
-    .three-row>[class*="col"] {
+    /* .three-row>[class*="col"] {
         padding-left: 15px;
         padding-right: 15px;
-    }
+    } */
     .three-row {
         margin-left: -15px;
         margin-right: -15px;
@@ -2741,45 +2741,99 @@ background: rgb(23, 44, 66);
         background: transparent linear-gradient(180deg, #F8F8F8 0%, #CFD9E3 100%) 0% 0% no-repeat padding-box;
     }
     .services-grid {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
         padding: 50px 50px 40px;
-        border-radius: 30px;
-        -webkit-transition: var(--transition);
-        transition: var(--transition);
         margin-bottom: 40px;
         position: relative;
         z-index: 1;
-        transition: var(--transition);
+        align-items: flex-end;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .services-grid {
         padding: 50px 30px 40px;
-        height: 36vh;
+        height: 62vh;
     }
-    .services-grid .thumbnail img {
+    .services-grid .overlay-content {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 13% 16%;
+        transition: opacity .2s ease-out;
     }
+    .services-grid .ser--hover {
+        clip-path: inset(0 100% 0 0);
+        -webkit-clip-path: inset(0 100% 0 0);
+        transition: -webkit-clip-path .6s cubic-bezier(.57, .57, 0, .97);
+        transition: clip-path .6s cubic-bezier(.57, .57, 0, .97);
+        transition: clip-path .6s cubic-bezier(.57, .57, 0, .97), -webkit-clip-path .6s cubic-bezier(.57, .57, 0, .97);
+        z-index: 2;
+    }
+    .services-grid .ser--hover {
+        background-color: #1b1b1b;
+        justify-content: end;
+    }
+    .services-grid:hover .ser--hover {
+        clip-path: inset(0 -1px 0 0);
+        -webkit-clip-path: inset(0 -1px 0 0);
+    }
+    .ser--hover p,
+    .ser--hover .title {
+        opacity: 0;
+        transform: translateX(20px);
+        transition: opacity .6s ease, transform .6s ease;
+        color: #fff;
+    }
+    .services-grid:hover .ser--hover p,
+    .services-grid:hover .ser--hover .title {
+        opacity: 1;
+        transform: translateX(0);
+        transition-delay: .2s;
+    }
+    .services-grid:hover .ser--hover .title {
+        opacity: 1;
+        transform: translateX(0);
+        transition-delay: .2s;
+    }
+    .services-grid:hover .ser--hover p {
+        transition-delay: .28s;
+    }
+    .services-grid .overlay-content .title {
+        font-size: 1.6em;
+        margin-bottom: 29px;
+    }
+    .services-grid .overlay-content p {
+        color: #c9c9c9;
+        font-size: 16px;
+    }
+    /* .services-grid .thumbnail img {
+        width: 100%;
+    } */
     .services-grid .content p {
         color: #666666;
         font-size: 16px;
     }
-    .services-grid.service-style-2 {
+    /* .services-grid.service-style-2 {
         background: transparent linear-gradient(180deg, #F8F8F8 0%, #EAC4C6 100%) 0% 0% no-repeat padding-box;
         ;
         border: 1px solid;
         border-image-source: linear-gradient( 90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%);
         background-color: var(--color-white);
         margin-bottom: 30px;
-    }
-    .services-grid.service-style-3 .content .title {
+    } */
+    .services-grid .content .title {
         font-size: 1.3em;
-        margin-bottom: 29px;
+        margin-bottom: 24px;
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 1px;
     }
     .services-grid .thumbnail {
         margin-right: 25px;
-        max-width: 85px;
     }
     .services-grid .content {
         -webkit-box-flex: 1;
@@ -2830,12 +2884,16 @@ background: rgb(23, 44, 66);
         position: relative;
         z-index: 1;
     }
-    .services-grid.service-style-2 .content .title a {
+    /* .services-grid.service-style-2 .content .title a {
         color: #292930;
-    }
+    } */
     .services-grid.service-style-2 .content .title {
-        font-size: 1.3em;
-        margin-bottom: 29px;
+        font-size: 1.6em;
+        margin-bottom: 10px;
+        margin-right: 20%;
+        text-shadow: 1px 1px 10px #00000054;
+        font-weight: 500;
+        letter-spacing: 1px;
     }
     /* footer Css */
     .footer {
@@ -3556,7 +3614,7 @@ button:focus {
 
 .nav-item a {
     font-family: Sarabun, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: -.01em;
     color: #fff;
     font-size: 16px;
