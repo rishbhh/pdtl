@@ -1143,14 +1143,28 @@ body {
         box-shadow: 5px 5px 10px #00000029;
         border-radius: 5px;
         overflow: hidden;
+        transform: rotate(0);
+        transform-origin: center;
+        transition: transform .2s ease-out;
+        z-index: 2;
+        position: relative;
     }
-    .read-all:before {
+    .read-all:after {
         content: '';
         position: absolute;
-        border-radius: 50%;
         width: 0;
-        height: 10px;
-        background-color: #000000;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: #7c0000;
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+    }
+    .read-all:hover::after {
+        width: 100%;
+    }
+    .read-all:hover span {
+        transform: rotate(90deg);
     }
     .read-all span {
         margin-right: 10px;
@@ -2343,6 +2357,12 @@ background: rgb(23, 44, 66);
         position: relative;
         margin-top: 10px;
         margin-right: 10px;
+        transform: rotate(0);
+        transform-origin: center;
+        transition: transform .2s ease-out;
+    }
+    .blog>.card>.inner-card>.date-con>.cat>.blog-conent>a:hover>.icons {
+        transform: rotate(90deg);
     }
     .blog>.card>.inner-card>.date-con>.cat>.blog-conent>a {
         display: flex;
