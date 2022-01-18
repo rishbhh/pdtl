@@ -227,7 +227,40 @@ $('#number1').jQuerySimpleCounter({ end: 12, duration: 3000 });
 $('#number2').jQuerySimpleCounter({ end: 55, duration: 3000 });
 $('#number3').jQuerySimpleCounter({ end: 359, duration: 2000 });
 $('#number4').jQuerySimpleCounter({ end: 246, duration: 2500 });
+var a = 0;
+$(window).scroll(function() {
+    var oTop = $("#counter-box").offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+        $(".counter").each(function() {
+            var $this = $(this),
+                countTo = $this.attr("data-number");
+            $({
+                countNum: $this.text()
+            }).animate({
+                    countNum: countTo
+                },
 
+                {
+                    duration: 850,
+                    easing: "swing",
+                    step: function() {
+                        //$this.text(Math.ceil(this.countNum));
+                        $this.text(
+                            Math.ceil(this.countNum).toLocaleString("en")
+                        );
+                    },
+                    complete: function() {
+                        $this.text(
+                            Math.ceil(this.countNum).toLocaleString("en")
+                        );
+                        //alert('finished');
+                    }
+                }
+            );
+        });
+        a = 1;
+    }
+});
 
 // FAQ Accordian 
 const accordionItemHeaders = document.querySelectorAll(
@@ -260,6 +293,23 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
     // accordionItemHeader.addEventListener("click", function() {
     //     document.getElementById("test").scrollIntoView({ behavior: "smooth" });
     // });
+});
+
+// Active
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    $(function() {
+        $('.nav-li').each(function() {
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('current-menu');
+
+                $(this).parents('li').addClass('current-menu');
+            } else {
+                $(this).removeClass('current-menu');
+            }
+        });
+    });
 });
 
 
@@ -583,12 +633,12 @@ function closeAnotherButtons(activeButton) {
 }
 
 // olick
-$(document).ready(function() {
-    $('.nav-item ').click(function() {
-        $('.nav-item').removeClass("current-menu");
-        $(this).addClass("current-menu");
-    });
-});
+// $(document).ready(function() {
+//     $('.nav-item ').click(function() {
+//         $('.nav-item').removeClass("current-menu");
+//         $(this).addClass("current-menu");
+//     });
+// });
 
 // sticky
 /* ========================================== 
