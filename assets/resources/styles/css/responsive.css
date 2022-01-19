@@ -553,6 +553,88 @@
         padding: 0;
         font-weight: bold;
     }
+    .contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #fff;
+        padding: 4em 2em;
+        border-radius: 15px;
+    }
+    .divider {
+        width: 100%;
+        height: 1px;
+        margin: 10px 0 10px 0;
+        background-color: #dae1f5;
+    }
+    .title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 50px;
+        color: var(--primary-text-color);
+    }
+    /* ACCORDION ITEM */
+    .accordion-item {
+        text-align: center;
+        width: 100%;
+    }
+    .accordion-item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        min-height: 3.1rem;
+        cursor: pointer;
+    }
+    .accordion-item-title {
+        color: #1a1a1a;
+        font-size: 1em;
+        letter-spacing: 1px;
+        font-weight: 500;
+        text-align: left;
+    }
+    .accordion-item-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    .accordion-item-body-content {
+        width: 100%;
+        padding-top: 1em;
+        color: var(--primary-text-color);
+        text-align: left;
+    }
+    .accordion-item-header.active>.icons::before {
+        transform: rotate(180deg);
+    }
+    .accordion-item-header.active>.icons::after {
+        transform: rotate(90deg);
+    }
+    .read-all {
+        margin: 0 auto;
+        margin-top: 19%;
+        background: #c32533;
+        color: #fff;
+        font-size: 12px;
+        padding: 10px 23px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        box-shadow: 5px 5px 10px #00000029;
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: 2;
+        position: relative;
+    }
+    .read-all span {
+        margin-right: 10px;
+        transform: rotate(0);
+        transform-origin: center;
+        transition: transform .2s ease-out;
+    }
 }
 
 @media screen and (max-width: 1275px) {
