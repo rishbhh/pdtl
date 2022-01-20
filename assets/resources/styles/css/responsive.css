@@ -336,6 +336,9 @@
     .get-on p a {
         color: #707070;
     }
+    .fnc-slide__heading-line .bi {
+        font-size: 62px;
+    }
     /* footer Css */
     .footer {
         width: 100%;
@@ -347,7 +350,7 @@
     .inner-footer {
         width: 95%;
         margin: auto;
-        padding: 79px 20px 80px 10px;
+        padding: 30px 20px 80px 10px;
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
@@ -398,8 +401,11 @@
     .logo-footer {
         width: 30%;
     }
+    .subit {
+        margin-top: 10%;
+    }
     .footer-items .subit input {
-        width: 62%;
+        width: 90%;
         background: transparent;
         border: 2px solid #ffffff38;
         padding: 13px 9px;
@@ -417,7 +423,7 @@
     }
     .footer-items p {
         font-size: 13px;
-        text-align: justify;
+        text-align: center;
         line-height: 25px;
         color: #ddd;
         margin-top: 7%;
@@ -483,7 +489,7 @@
     .social-media {
         width: 100%;
         color: #fff;
-        text-align: left;
+        text-align: center;
         font-size: 20px;
     }
     .social-media a {
@@ -1573,6 +1579,136 @@
         top: 35%;
         font-size: 1.8rem;
     }
+    .navbar {
+        background: #1a1a1a;
+        width: 89px;
+    }
+    .menu-toggle {
+        margin-right: 0;
+    }
+    /* Form Css */
+    .radio-input {
+        visibility: hidden;
+    }
+    .radio-label {
+        position: relative;
+        padding-left: 35px;
+    }
+    .radio-label:after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+    }
+    .radio-border {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        outline: solid 2px #6d6d6d;
+        border-radius: 0%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .radio-input:checked+.radio-label:after {
+        transition: all 0.5s;
+        background-color: #000000;
+    }
+    .form-div {
+        width: 100%;
+        padding: 30px;
+    }
+    .datainput {
+        position: relative;
+        margin: 5px 0 20px
+    }
+    .datainput p {
+        font-size: 12px;
+        background: #eee;
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: .5rem
+    }
+    .whatsapp-form textarea {
+        min-height: 120px
+    }
+    .datainput select {
+        padding: 12px 0;
+        color: #555;
+        font-size: 14px;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        outline: none;
+        background: #fff
+    }
+    .datainput input,
+    .datainput textarea {
+        font-size: 15px;
+        padding: 15px 0;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        vertical-align: top;
+        background-color: transparent;
+        border-radius: 0;
+        box-sizing: border-box;
+        color: #1b1b1b;
+        cursor: pointer;
+        display: inline-block;
+        font-family: inherit;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: -.01em;
+        line-height: 24px;
+        position: relative;
+        margin: 0;
+        padding-left: 120px;
+    }
+    .datainput input:focus,
+    .datainput textarea:focus {
+        outline: none
+    }
+    .datainput label {
+        color: #999;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        margin: 0 0 48px;
+        width: 100%;
+        /* top: 18px; */
+        transition: .2s ease all;
+    }
+    .datainput label .name {
+        line-height: 24px;
+        padding: 11px 0px;
+        position: absolute;
+        width: 120px;
+        z-index: 1;
+    }
+    .datainput label .in {
+        width: 100%;
+    }
+    .whatsapp-form a.send_form {
+        color: #fff;
+        background: #c01b27;
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px 25px;
+        border-radius: 0.3rem;
+        font-weight: 700;
+        letter-spacing: .5px;
+        font-size: 15px;
+        margin-top: 10%;
+    }
+    .whatsapp-form p {
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 300px) {}
@@ -1598,5 +1734,6 @@
 @media screen and (max-width: 660px) {
     .footer-items {
         width: 100%;
+        text-align: center;
     }
 }

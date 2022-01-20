@@ -1286,7 +1286,22 @@ body {
         display: block;
         width: 100%;
         border: none;
-        border-bottom: 1px solid #ddd
+        border-bottom: 1px solid #ddd;
+        vertical-align: top;
+        background-color: transparent;
+        border-radius: 0;
+        box-sizing: border-box;
+        color: #1b1b1b;
+        cursor: pointer;
+        display: inline-block;
+        font-family: inherit;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: -.01em;
+        line-height: 24px;
+        position: relative;
+        margin: 0;
+        padding-left: 120px;
     }
     .datainput input:focus,
     .datainput textarea:focus {
@@ -1296,11 +1311,21 @@ body {
         color: #999;
         font-size: 14px;
         font-weight: 400;
+        display: flex;
+        margin: 0 0 48px;
+        width: 100%;
+        /* top: 18px; */
+        transition: .2s ease all;
+    }
+    .datainput label .name {
+        line-height: 24px;
+        padding: 11px 0px;
         position: absolute;
-        pointer-events: none;
-        left: 0;
-        top: 18px;
-        transition: .2s ease all
+        width: 120px;
+        z-index: 1;
+    }
+    .datainput label .in {
+        width: 100%;
     }
     .datainput input:focus~label,
     .datainput input:valid~label,
@@ -1466,6 +1491,7 @@ body {
     }
     .secion-4 {
         margin-bottom: 160px;
+        margin-top: 10%;
     }
     .projectFactsWrap .item p.number {
         font-size: 60px;
@@ -2592,6 +2618,9 @@ body {
         position: absolute;
         top: 35%;
         font-size: 1.8rem;
+    }
+    .secion-3 {
+        padding: 10%;
     }
     /* Banner */
     .hero-banner {
