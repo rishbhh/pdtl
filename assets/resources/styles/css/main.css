@@ -625,6 +625,7 @@ button {
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 .demo-cont {
@@ -2435,7 +2436,7 @@ body {
         padding-left: 80px;
     }
     .red-con {
-        width: 60%;
+        width: 51%;
     }
     .blue-div {
         width: 60%;
