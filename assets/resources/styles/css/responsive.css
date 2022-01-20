@@ -339,6 +339,138 @@
     .fnc-slide__heading-line .bi {
         font-size: 62px;
     }
+    .hero-banner {
+        background-repeat: no-repeat;
+        height: 75vh;
+        background-size: cover;
+        width: 100%;
+        filter: brightness(0.9);
+        align-items: center;
+        display: flex;
+        background-position: center;
+    }
+    .hero-banner h4 {
+        font: normal normal bold 54px/67px sarabun;
+    }
+    /* Training Page Slider */
+    .traning-slider {
+        padding: 1% 0% 0% 11%;
+        width: 85%;
+        background: #1A1A1A 0% 0% no-repeat padding-box;
+        margin-bottom: 5%;
+    }
+    .traning-slider .m-title {
+        color: #fff;
+        padding: 28px 0px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .slider-content-wrapper {
+        display: flex;
+        height: 22vh;
+        transition: transform 0.5s ease-in-out;
+    }
+    .weight-500 {
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .meet-h {
+        text-align: left;
+        width: 100%;
+    }
+    .title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 50px;
+        color: var(--primary-text-color);
+    }
+    .content-div p {
+        text-align: left;
+        letter-spacing: 1.1px;
+        color: #707070;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+    }
+    .content-div a {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        font-size: 17px;
+        color: #1a1a1a;
+        letter-spacing: 1px;
+        font-weight: 500;
+        text-align: left;
+    }
+    .content-div a .icons {
+        margin-right: 10px;
+        padding: 28px 28px;
+        transform: rotate(0);
+        transform-origin: center;
+        transition: transform .2s ease-out;
+    }
+    .three-row {
+        /* --bs-gutter-x: 1.5rem; */
+        /* --bs-gutter-y: 0; */
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
+    .three-row .col-lg-4 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .services-grid {
+        display: flex;
+        padding: 50px 50px 40px;
+        position: relative;
+        z-index: 1;
+        align-items: flex-end;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .services-grid {
+        padding: 50px 30px 40px;
+        height: 49vh;
+    }
+    .services-grid .content {
+        display: none;
+    }
+    .red-div {
+        width: 40%;
+        background: #ce0404;
+        height: 24vh;
+        justify-content: flex-start;
+    }
+    .red-traning {
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 0%;
+    }
+    .bl-tr .blue-con input {
+        width: 380px;
+        background: transparent;
+        box-shadow: none;
+        border: 2px solid #dadada;
+        padding: 14px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    .bl-tr .flex-div {
+        width: 100%;
+    }
+    .red-traning h5 {
+        font-size: 2.1em;
+        color: #fff;
+    }
+    .enroll>a>span {
+        margin-right: 10px;
+    }
     /* footer Css */
     .footer {
         width: 100%;
@@ -580,8 +712,12 @@
     .title {
         font-size: 1.8rem;
         font-weight: 700;
-        margin-bottom: 50px;
-        color: var(--primary-text-color);
+        margin-bottom: 30px;
+        color: #fff;
+    }
+    .services-grid .overlay-content p {
+        color: #c9c9c9;
+        font-size: 16px;
     }
     /* ACCORDION ITEM */
     .accordion-item {
@@ -1318,6 +1454,37 @@
     }
     .enroll {
         margin-top: 6%;
+        margin-bottom: 6%;
+    }
+    .logi {
+        text-align: left;
+        width: 100%;
+        font-size: 30px;
+        line-height: 1.6;
+        text-transform: capitalize;
+        color: #1a1a1a;
+    }
+    .tabs {
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 2px solid #c7c7c7;
+    }
+    .tabs ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tabs ul li {
+        float: left;
+        width: 50%;
+        line-height: 60px;
+        text-align: left;
+    }
+    .tabs ul li a {
+        color: #1a1a1a;
+        letter-spacing: 1px;
+        font-weight: 700;
     }
     .blue-con>h6 {
         font: normal normal bold 20px/29px Sarabun;
