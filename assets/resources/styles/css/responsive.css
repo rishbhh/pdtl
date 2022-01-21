@@ -69,6 +69,10 @@
     }
     .red-con>h6 {
         padding-right: 11%;
+        padding-left: 50px;
+    }
+    .mt-18 {
+        margin-top: 0;
     }
     .blue-con>h6 {
         font: normal normal bold 20px/29px Sarabun;
@@ -455,7 +459,7 @@
         padding-left: 0%;
     }
     .bl-tr .blue-con input {
-        width: 380px;
+        width: 100%;
         background: transparent;
         box-shadow: none;
         border: 2px solid #dadada;
@@ -2211,6 +2215,13 @@
         background: #ce0404;
         height: 22vh;
         justify-content: flex-start;
+    }
+    .about-frm .datainput input,
+    .datainput textarea {
+        margin-left: 0;
+    }
+    .whatsapp-form a.send_form span {
+        margin-left: 10px;
     }
 }
 
