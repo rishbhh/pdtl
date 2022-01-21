@@ -31,13 +31,14 @@
         color: #FFFFFF;
         text-shadow: 10px 10px 12px #00000029;
         text-transform: capitalize;
-        margin-left: 0%;
+        margin-left: 8%;
     }
     .enroll>a {
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 5px 5px 10px #00000029;
-        padding: 18px 15px;
+        padding: 25px 15px;
         margin-left: 40px;
+        vertical-align: middle;
         font-size: 14px;
         color: #1a1a1a;
         letter-spacing: 1px;
