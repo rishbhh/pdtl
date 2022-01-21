@@ -31,7 +31,7 @@
         color: #FFFFFF;
         text-shadow: 10px 10px 12px #00000029;
         text-transform: capitalize;
-        margin-left: 8%;
+        margin-left: 0%;
     }
     .enroll>a {
         background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -118,6 +118,9 @@
         position: relative;
         top: 30%;
         left: 10px;
+    }
+    .fnc-nav {
+        display: none;
     }
     .fnc-slide__heading-line {
         padding-right: 0;
@@ -344,6 +347,7 @@
         height: 75vh;
         background-size: cover;
         width: 100%;
+        justify-content: center;
         filter: brightness(0.9);
         align-items: center;
         display: flex;
@@ -646,7 +650,7 @@
         padding: 30px 0px;
         /* background: #00121b; */
         color: rgb(255 255 255 / 60%);
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 300;
         border-top: 1px solid #3e3e3e;
         text-align: center;
@@ -1549,6 +1553,102 @@
     .dark {
         color: #1a1a1a;
     }
+    .bdr {
+        border-radius: 0;
+        padding: 5em 2em;
+    }
+    .our {
+        border-bottom: 1px solid #bfbfbf;
+        padding-bottom: 6%;
+    }
+    .cust-li {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .cust-li ul {
+        list-style: none;
+        text-align: left;
+    }
+    .cust-li ul li {
+        padding-bottom: 20px;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+        line-height: 2em;
+        font-weight: 500;
+        position: relative;
+        text-transform: uppercase;
+        color: #1a1a1a;
+    }
+    .cust-li ul .chev:before {
+        border-style: solid;
+        border-width: 0.2em 0.2em 0 0;
+        content: '';
+        display: inline-block;
+        height: 0.35em;
+        left: -1.85em;
+        position: absolute;
+        top: 0.8em;
+        transform: rotate( -135deg);
+        vertical-align: top;
+        width: 0.35em;
+        border-color: #C01B27;
+    }
+    .cust-li ul .chev:after {
+        border-style: solid;
+        border-width: 0.2em 0.2em 0 0;
+        content: '';
+        display: inline-block;
+        height: 0.35em;
+        left: -1.7em;
+        position: absolute;
+        top: 1em;
+        transform: rotate( 45deg);
+        vertical-align: top;
+        width: 0.35em;
+        border-color: #C01B27;
+    }
+    .about-frm>.contain-flex>.form-div {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .about-frm form.whatsapp-form .datainput input,
+    .datainput textarea {
+        padding-left: 10px;
+    }
+    .bar {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .bar:before {
+        left: 50%;
+    }
+    .bar:after {
+        right: 50%;
+    }
+    .bar:before,
+    .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #c01b27;
+        transition: .2s ease all;
+    }
+    .about-frm .title {
+        margin-top: 5%;
+        padding-left: 10%;
+        margin-bottom: 0%;
+        font-size: 2.3em;
+        font-weight: 500;
+    }
+    .about-frm form.whatsapp-form {
+        padding-left: 0;
+    }
     .m-title {
         font-family: Sarabun, sans-serif;
         font-weight: 700;
@@ -1586,6 +1686,93 @@
         align-items: center;
         padding: 10%;
         background-attachment: fixed;
+    }
+    /* Course */
+    .course {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .course>.card {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .course>.card>.inner-card {
+        display: flex;
+        margin-bottom: 5%;
+        flex-wrap: wrap;
+    }
+    .course>.card>.inner-card>.imgg {
+        width: 100%;
+        padding-right: 4%;
+        position: relative;
+    }
+    .course>.card>.inner-card>.imgg>.dat {
+        color: #fff;
+        position: absolute;
+        bottom: 0px;
+        right: 39px;
+        text-align: right;
+        padding: 4%;
+        background: #c01b27;
+    }
+    .course>.card>.inner-card>.imgg>.dat>h6 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    .course>.card>.inner-card>.imgg>.dat>small {
+        letter-spacing: 1px;
+    }
+    .course>.card>.inner-card>.date-con {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .course>.card>.inner-card>.date-con>.cat {
+        width: 100%;
+    }
+    .cr-conent {
+        text-align: left;
+    }
+    .cr-conent>h4 {
+        font: normal normal 600 25px/29px Sarabun;
+        letter-spacing: 2px;
+        text-align: left;
+        color: #1a1a1a;
+        margin-bottom: 1%;
+    }
+    .cr-conent>small {
+        text-align: left;
+        font: normal normal 400 15px/45px Sarabun;
+        letter-spacing: 1.2px;
+        color: #C01B27;
+    }
+    .cr-conent>p {
+        font: normal normal 400 18px/20px Sarabun;
+        letter-spacing: 1.2px;
+        color: #666666;
+    }
+    .cr-conent>.price {
+        font: normal normal 800 30px/48px Sarabun;
+        letter-spacing: 2.4px;
+        color: #000000;
+        margin-top: 3%;
+        margin-bottom: 5%;
+    }
+    .cr-conent>.book {
+        background: #C01B27 0% 0% no-repeat padding-box;
+        box-shadow: 5px 5px 10px #00000029;
+        border-radius: 4px;
+        padding: 9px 19px;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .cr-conent>.book>span {
+        margin-left: 10px;
     }
     .div-s {
         background: #0000003b;
@@ -2015,6 +2202,15 @@
     }
     .testim .cont div p {
         line-height: 25px;
+    }
+    .red-con {
+        width: 43%;
+    }
+    .red-div {
+        width: 100%;
+        background: #ce0404;
+        height: 22vh;
+        justify-content: flex-start;
     }
 }
 
