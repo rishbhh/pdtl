@@ -525,7 +525,11 @@ $(document).ready(function() {
 
 });
 
-
+$(document).ready(function() {
+    $('.show-hide').click(function() {
+        $(this).next().toggle();
+    });
+});
 // dropdwon
 const button = document.querySelector('button');
 const menu = document.querySelector('.menu');
