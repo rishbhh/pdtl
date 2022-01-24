@@ -248,7 +248,7 @@ $('.carousel-main').owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
-    autoplayTimeout: 1500,
+    autoplayTimeout: 2000,
     margin: 10,
     nav: true,
     dots: false,
