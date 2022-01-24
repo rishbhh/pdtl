@@ -3684,6 +3684,38 @@ input:focus-visible {
     font-weight: 600;
 }
 
+.col-carousel {
+    margin: 70px 0;
+}
+
+
+/* owl nav */
+
+.owl-prev span,
+.owl-next span {
+    color: #FFF;
+}
+
+.owl-prev span:hover,
+.owl-next span:hover {
+    color: #8199A3;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.owl-prev {
+    left: 7px;
+}
+
+.owl-next {
+    right: 7px;
+}
+
 .logi {
     text-align: left;
     width: 100%;
