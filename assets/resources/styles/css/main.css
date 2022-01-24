@@ -1134,7 +1134,7 @@ body {
     .read-all {
         margin: 0 auto;
         margin-top: 6%;
-        background: #c32533;
+        background: #ce0404;
         color: #fff;
         font-size: 17px;
         padding: 15px 25px;
@@ -3841,7 +3841,7 @@ input:focus-visible {
 }
 
 .bg-s {
-    background: #c32533;
+    background: #ce0404;
 }
 
 
@@ -4056,7 +4056,7 @@ input:focus-visible {
 }
 .next-arrow {
     right: -28px;
-    background: #c32533;
+    background: #ce0404;
 }
 .next-arrow svg {
     width: 20px;
@@ -4322,9 +4322,9 @@ button:focus {
 }
 .fixed-header .call-us a {
     padding: 10px 20px;
-    background: #c32533 0% 0% no-repeat padding-box;
+    background: #ce0404 0% 0% no-repeat padding-box;
     box-shadow: 2px 2px 2px #00000029;
-    border: 0px solid #c32533;
+    border: 0px solid #ce0404;
     border-radius: 5px;
     color: #fff;
     font-size: 15px;
