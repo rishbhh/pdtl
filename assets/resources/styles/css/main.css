@@ -1707,7 +1707,22 @@ form.whatsapp-form {
     color: var(--primary-text-color);
     text-align: left;
 }
-
+.accordion-item-body-content h1{
+    font-size: 2em;
+    margin-bottom: 3%;
+}
+.accordion-item-body-content p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #4e4e4e;
+    margin-bottom: 20px;
+}
+.accordion-item-body-content ul li{
+    font-size: 15px;
+    line-height: 1.8;
+    color: #4e4e4e;
+    list-style: inside;
+}
 .icons {
     display: flex;
     justify-content: center;
