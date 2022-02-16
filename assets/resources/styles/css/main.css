@@ -4724,7 +4724,7 @@ a:hover>.icons {
 
 /* 1. Ensure this sits above everything when visible */
 .modal {
-    position: absolute;
+    position: fixed;
     z-index: 10000; /* 1 */
     top: 0;
     left: 0;
@@ -4757,16 +4757,35 @@ a:hover>.icons {
 }
 
 .modal-wrapper {
-  position: absolute;
-  z-index: 9999;
-  top: 6em;
-  left: 50%;
-  width: 32em;
-  margin-left: -16em;
-  background-color: #fff;
-  box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+    position: absolute;
+    z-index: 9999;
+    top: 4em;
+    left: 180px;
+    border-radius: 14px;
+    width: 70%;
+    margin-left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 1.5em hsl(0deg 0% 0% / 35%);
 }
 
+.modal-content .contain-flex {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.modal-content .contain-flex  .datainput label {
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    margin: 0 0 6px;
+    width: 100%;
+    /* top: 18px; */
+    transition: .2s ease all;
+}
 .modal-transition {
   transition: all 0.3s 0.12s;
   transform: translateY(-10%);
@@ -4778,26 +4797,58 @@ a:hover>.icons {
   opacity: 1;
 }
 
-.modal-header,
+
 .modal-content {
-  padding: 1em;
+    padding: 6% 4%;
 }
 
+.modal-content .get-on {
+    width: 52%;
+    padding-right: 4%;
+}
+.modal-content  .radio-input {
+    visibility: hidden;
+    position: absolute;
+}
+.modal-content .get-on h2 {
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #1a1a1a;
+    font-size: 40px;
+    line-height: 1.5em;
+    padding-right: 10%;
+    margin: 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.modal-content form.whatsapp-form {
+    /* box-shadow: 0 1px 6px rgb(32 33 36 / 28%); */
+    border-radius: 0.5rem;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 14px;
+    padding-left: 9%;
+    line-height: 1.5;
+}
 .modal-header {
-  position: relative;
-  background-color: #fff;
-  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
-  border-bottom: 1px solid #e8e8e8;
+    position: absolute;
+    /* background-color: #fff; */
+    /* box-shadow: 0 1px 2px hsl(0deg 0% 0% / 6%); */
+    /* border-bottom: 1px solid #e8e8e8; */
+    padding: 8px 0px;
+    right: 0;
 }
-
 .modal-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1em;
-  color: #aaa;
-  background: none;
-  border: 0;
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 0; */
+    padding: 0em 10px;
+    margin: auto;
+    color: #aaa;
+    background: none;
+    border: 0;
+    font-size: 20px;
 }
 
 .modal-close:hover {
