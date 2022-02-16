@@ -341,7 +341,7 @@ button {
     z-index: 2;
     position: absolute;
     left: 50%;
-    top: 29%;
+    top: 40%;
 }
 
 .fnc-slide__heading {
@@ -352,12 +352,11 @@ button {
 
 .fnc-slide__heading-line {
     /* overflow: hidden; */
-    position: relative;
-    padding-right: 42%;
-    font-size: 62px;
+    padding-right: 17%;
+    font-size: 48px;
     color: #fff;
     word-spacing: 10px;
-    line-height: 1.1;
+    line-height: 1.5;
 }
 
 .fnc-slide__heading-line .smal {
@@ -2762,7 +2761,7 @@ input:focus-visible {
 .enroll>a {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 5px 5px 10px #00000029;
-    padding: 25px 15px;
+    padding: 16px 15px;
     margin-left: 40px;
     font-size: 18px;
     color: #1a1a1a;
@@ -2936,6 +2935,8 @@ input:focus-visible {
 .slide {
     transition: filter .4s;
     margin: 0px 40px;
+    width: 26%;
+    padding: 0px 70px;
 }
 
 .fas {
@@ -3020,6 +3021,9 @@ input:focus-visible {
     list-style: none;
     text-align: left;
 }
+.step .accordion-item-body-content{
+    width: 100%;
+}
 
 .cust-li ul li {
     padding-bottom: 20px;
@@ -3030,6 +3034,7 @@ input:focus-visible {
     position: relative;
     text-transform: uppercase;
     color: #1a1a1a;
+    list-style: none;
 }
 
 .cust-li ul .chev:before {
@@ -3754,8 +3759,8 @@ input:focus-visible {
 }
 
 .tabs ul li {
-    float: left;
-    width: 16%;
+    /* float: left; */
+    width: 29%;
     line-height: 60px;
     text-align: left;
 }
@@ -3769,7 +3774,7 @@ input:focus-visible {
 .tabs span {
     display: block;
     height: 2px;
-    width: 15%;
+    width: 30%;
     background: #c01b27;
     position: relative;
     left: 0;
@@ -4023,6 +4028,9 @@ input:focus-visible {
     position: relative;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 
 

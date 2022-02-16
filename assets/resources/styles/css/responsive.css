@@ -1,8 +1,11 @@
 
 
 @media only screen and (max-width: 1280px) {
+    .red-img img {
+        width: 220px;
+    }
     .fnc-slide__content {
-        top: 32%;
+        top: 42%;
     }
     .navbar ul li {
         height: 100%;
@@ -14,7 +17,7 @@
         font-size: 14px;
     }
     .fnc-slide__heading-line {
-        font-size: 51px;
+        font-size: 40px;
     }
     .fnc-slide__heading-line .smal {
         text-align: left;
@@ -38,7 +41,7 @@
     .enroll>a {
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 5px 5px 10px #00000029;
-        padding: 25px 15px;
+        padding: 16px 15px;
         margin-left: 40px;
         vertical-align: middle;
         font-size: 14px;
