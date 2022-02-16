@@ -616,3 +616,9 @@ for (let i = 0; i < links.length; i++) {
 
     });
 }
+
+// Quick & dirty toggle to demonstrate modal toggle behavior
+$('.modal-toggle').on('click', function(e) {
+    e.preventDefault();
+    $('.modal').toggleClass('is-visible');
+  });
