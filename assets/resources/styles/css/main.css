@@ -1,6 +1,10 @@
 /* fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@font-face {
+    font-family: Ageo;
+    src: url(/assets/resources/fonts/Ageo.woff);
+  }
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +29,9 @@ img {
     height: auto;
     vertical-align: middle;
 }
-
+p{
+    font-family: 'Ageo';
+}
 
 /* dropdwon */
 
@@ -1145,6 +1151,14 @@ body {
         z-index: 2;
         position: relative;
     }
+    .read-all .icon{
+        transform: rotate(0);
+    transform-origin: center;
+    transition: transform .2s ease-out;
+    }
+    .read-all:hover .icon {
+        transform: rotate(90deg);
+    }
     .read-all:after {
         content: '';
         position: absolute;
@@ -1721,6 +1735,7 @@ form.whatsapp-form {
     line-height: 1.8;
     color: #4e4e4e;
     list-style: inside;
+    font-family: 'Ageo';
 }
 .icons {
     display: flex;
@@ -1885,7 +1900,7 @@ button:hover {
 }
 
 .news-conent>p {
-    font: normal normal normal 17px/35px Sarabun;
+    font: normal normal normal 17px/35px Ageo;
     letter-spacing: 1px;
     color: #666666;
     padding-right: 11%;
@@ -4531,7 +4546,42 @@ button:focus {
     margin-right: 10px;
     width: 18px;
 }
+.call-us a:hover span img {
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+}
+.phonering-alo-ph-img-circle {
+    -webkit-animation:phonering-alo-circle-img-anim 1s infinite ease-in-out!important;
+    animation:phonering-alo-circle-img-anim 1s infinite ease-in-out!important
+}
+@-webkit-keyframes phonering-alo-circle-img-anim {
+    0% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg)
+    }
 
+    10% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg)
+    }
+}
 .icons {
     letter-spacing: -.01em;
     font-size: 17px;
