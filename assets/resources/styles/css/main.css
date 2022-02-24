@@ -2795,10 +2795,16 @@ input:focus-visible {
 }
 
 .enroll>a>span {
-    margin-right: 10px;
-    font-size: 25px;
+    margin-right: 7px;
+    font-size: 15px;
     font-weight: 500;
 }
+
+/* .enroll>a>.t {
+    margin-right: 7px;
+    font-size: 15px;
+    font-weight: 500;
+} */
 
 
 /* Logo Slider */
