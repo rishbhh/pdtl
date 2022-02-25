@@ -1053,10 +1053,13 @@ body {
     }
     .m-text {
         margin: 14px 0 0;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.7;
-        letter-spacing: 0.9px;
+        letter-spacing: 0.4px;
         color: #666666;
+    }
+    .p-r-2{
+        padding-right: 2%;
     }
     .dvid .m-text:after {
         background-color: #a6a6a6;
@@ -3114,11 +3117,12 @@ input:focus-visible {
 /* traning Page*/
 
 .text-p {
-    margin-top: 40px;
+    margin-top: 0px;
     font-size: 21px;
     letter-spacing: 1px;
     line-height: 1.9;
     color: #666666;
+    padding-right: 25px;
 }
 
 .dvid .info-step {
