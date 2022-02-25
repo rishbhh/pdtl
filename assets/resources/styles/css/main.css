@@ -3031,6 +3031,11 @@ input:focus-visible {
     line-height: 1.6;
     margin-bottom: 40px;
 }
+.content-div h3{
+    text-align: left;
+    margin-bottom: 21px;
+    letter-spacing: 1px;
+}
 
 .weight-500 {
     font-weight: 500;
