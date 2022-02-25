@@ -1139,6 +1139,9 @@ body {
         filter: brightness(12);
         margin-bottom: 9px;
     }
+    .cta1:hover .call img {
+        animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    }
     .read-all {
         margin: 0 auto;
         margin-top: 6%;
