@@ -548,7 +548,10 @@
         width: 30%;
     }
     .subit {
-        margin-top: 10%;
+        margin-top: 0%;
+    }
+    .su{
+        margin-bottom: 3%;
     }
     .footer-items .subit input {
         width: 90%;
