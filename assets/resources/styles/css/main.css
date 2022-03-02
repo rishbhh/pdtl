@@ -2989,12 +2989,13 @@ input:focus-visible {
 /* Banner */
 
 .hero-banner {
-    height: 83vh;
+    height: 80vh;
     background-size: cover;
     width: 100%;
     filter: brightness(0.9);
     align-items: center;
     display: flex;
+    background-position: bottom;
 }
 
 .hero-banner h4 {
